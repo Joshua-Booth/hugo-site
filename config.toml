@@ -1,0 +1,120 @@
+############################ Default configuration #########################
+baseURL = "https://joshuabooth.nz/"
+languageCode = "en-us"
+# site title 
+title = "Joshua Booth"
+# post pagination
+paginate = "5"
+# post excerpt
+summaryLength = "10"
+
+[outputs]
+home = ["HTML", "AMP", "RSS", "JSON"]
+
+########################## Plugins ######################################
+
+# css plugins
+[[params.plugins.css]]
+URL = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+
+# js plugins
+[[params.plugins.js]]
+URL = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+URL = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+URL = "plugins/search/mark.js"
+[[params.plugins.js]]
+URL = "plugins/search/search.js"
+
+
+########################### Navigation ###################################
+
+# main menu
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 1
+
+# footer menu
+[[menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 1
+
+
+######################### Default Parameters ###########################
+[params]
+# home
+home = "Home"
+# logo
+logo = "images/logo.svg"
+# meta data
+author = "Joshua Booth"
+description = "Joshua Booth's personal website. Here you can find all about him, his work and how to contact him."
+# google analitycs ID
+googleAnalitycsID = "UA-155146153-1"
+# contact form action
+contactFormAction = "https://formspree.io/xyyknvro" # contact form works with : https://formspree.io
+# copyright
+copyright = "&copy; 2020 [Joshua Booth](https://joshuabooth.nz) All Rights Reserved"
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "images/logo.svg" # use png, jpg, svg or gif format
+
+# search
+[params.search]
+enable = true
+
+# blog
+[params.blog]
+enable = false
+
+
+####################### Banner #######################################
+[params.banner]
+bgImage = "images/banner/banner-bg.svg"
+title = "Software Developer"
+subTitle = "Design & Full-stack Development"
+image = "images/banner/web_developer.svg"
+
+
+######################## Call to Action ###############################
+[params.cta]
+enable = true
+image = "images/get_in_touch.svg"
+title = "Hire me for your next project"
+description = ""
+[params.cta.button]
+enable = true
+label = "Contact me"
+link = "contact"
+
+
+############################## Social Site ##########################
+[[params.social]]
+name = "Instagram"
+icon = "ti-instagram" # themify icon pack https://themify.me/themify-icons
+link = "https://www.instagram.com/joshuabooth.nz/"
+[[params.social]]
+name = "GitHub"
+icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+link = "https://github.com/Joshua-Booth"
+[[params.social]]
+name = "LinkedIn"
+icon = "ti-linkedin" # themify icon pack https://themify.me/themify-icons
+link = "https://www.linkedin.com/in/joshua-booth/"
+[[params.social]]
+name = "Email"
+icon = "ti-email" # themify icon pack https://themify.me/themify-icons
+link = "mailto:me@joshuabooth.nz"
+[[params.social]]
+name = "Phone"
+icon = "ti-mobile" # themify icon pack https://themify.me/themify-icons
+link = "tel:027-943-4727"

@@ -1,0 +1,10 @@
+### Visual Studio Code ###
+.vscode/*
+
+### Visual Studio Code Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/visualstudiocode
+
+public/
