@@ -1,0 +1,10 @@
+<ul class="list-inline social-icon">
+    {{ range .Site.Params.social }}
+    <li class="list-inline-item pl-2">
+      <a href="{{ .link | safeURL }}" aria-label="{{ .name }}" alt="{{ .name }}"
+        target="_blank" rel="noopener noreferrer">
+        <i class="{{ .icon }}"></i>
+      </a>
+    </li>
+    {{ end }}
+</ul>

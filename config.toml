@@ -8,6 +8,9 @@ paginate = "5"
 # post excerpt
 summaryLength = "10"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
 
@@ -36,15 +39,25 @@ URL = "plugins/search/search.js"
 
 # main menu
 [[menu.main]]
+URL = "about"
+name = "About"
+weight = 1
+
+[[menu.main]]
 URL = "contact"
 name = "Contact"
-weight = 1
+weight = 2
 
 # footer menu
 [[menu.footer]]
+URL = "about"
+name = "About"
+weight = 1
+
+[[menu.footer]]
 URL = "contact"
 name = "Contact"
-weight = 1
+weight = 2
 
 
 ######################### Default Parameters ###########################
@@ -118,3 +131,59 @@ link = "mailto:me@joshuabooth.nz"
 name = "Phone"
 icon = "ti-mobile" # themify icon pack https://themify.me/themify-icons
 link = "tel:027-943-4727"
+
+
+############################ About ############################
+[params.about]
+enable = true
+[params.about.cta]
+enable = false
+image = "images/work.svg"
+title = "See my work"
+description = "See my work and portfolio"
+[params.about.cta.button]
+enable = false
+label = "View my Work"
+link = "work"
+
+
+############################ Skills ############################
+[params.skills]
+enable = true
+
+[[params.skills.front]]
+name = "HTML"
+icon = "/images/about/html.svg"
+[[params.skills.front]]
+name = "CSS"
+icon = "/images/about/css.svg"
+[[params.skills.front]]
+name = "JavaScript"
+icon = "/images/about/javascript.svg"
+
+[[params.skills.back]]
+name = "Python"
+icon = "/images/about/python.svg"
+[[params.skills.back]]
+name = "C#"
+icon = "/images/about/csharp.svg"
+[[params.skills.back]]
+name = "MySQL & T-SQL"
+icon = "/images/about/mysql.svg"
+
+[[params.skills.design]]
+name = "Adobe Photoshop"
+icon = "/images/about/adobe-photoshop.svg"
+[[params.skills.design]]
+name = "Adobe Illustrator"
+icon = "/images/about/adobe-illustrator.svg"
+[[params.skills.design]]
+name = "Adobe XD"
+icon = "/images/about/adobe-xd.svg"
+
+[[params.skills.tools]]
+name = "Git & GitHub"
+icon = "/images/about/git.svg"
+[[params.skills.tools]]
+name = "Visual Studio & Code"
+icon = "/images/about/visual-studio-code.svg"

@@ -1,0 +1,21 @@
+<div class="row">
+    {{ $align := .Get 0 }}
+    {{ $image := .Get 1 }}
+    <div class="col-lg-12 mx-auto pt-3">
+        <div class="row bg-white p-3">
+            {{ if eq $align "left" }}
+            <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
+                <img src="{{ $image | relURL }}" class="mr-4" alt="...">
+            </div>           
+            {{ end }}
+            <div class="col-md-8 text-center text-md-left my-auto">
+                <p>{{ .Inner | markdownify }}</p>
+            </div>
+            {{ if eq $align "right" }}
+            <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
+                <img src="{{ $image | relURL }}" class="mr-4" alt="...">
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

@@ -475,7 +475,6 @@ textarea.form-control {
 }
 
 .author-thumb {
-  height: 300px;
   width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -550,18 +549,6 @@ textarea.form-control {
   padding-left: 20px;
   margin-bottom: 15px;
   list-style-type: none;
-}
-
-.content ul li::before {
-  position: absolute;
-  content: "\e71b";
-  font-family: "themify";
-  font-size: 14px;
-  left: 0;
-  top: 1px;
-  color: #1d6dd6;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
 }
 
 .content table {
