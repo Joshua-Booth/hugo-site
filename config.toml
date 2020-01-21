@@ -44,9 +44,14 @@ name = "About"
 weight = 1
 
 [[menu.main]]
+URL = "work"
+name = "Work"
+weight = 2
+
+[[menu.main]]
 URL = "contact"
 name = "Contact"
-weight = 2
+weight = 3
 
 # footer menu
 [[menu.footer]]
@@ -55,9 +60,14 @@ name = "About"
 weight = 1
 
 [[menu.footer]]
+URL = "work"
+name = "Work"
+weight = 2
+
+[[menu.footer]]
 URL = "contact"
 name = "Contact"
-weight = 2
+weight = 3
 
 
 ######################### Default Parameters ###########################
@@ -83,7 +93,7 @@ preloader = "images/logo.svg" # use png, jpg, svg or gif format
 
 # search
 [params.search]
-enable = true
+enable = false
 
 # blog
 [params.blog]
@@ -137,13 +147,13 @@ link = "tel:027-943-4727"
 [params.about]
 enable = true
 [params.about.cta]
-enable = false
+enable = true
 image = "images/work.svg"
-title = "See my work"
-description = "See my work and portfolio"
+title = "Websites, Software and Designs"
+description = "Take a look at my work and portfolio"
 [params.about.cta.button]
-enable = false
-label = "View my Work"
+enable = true
+label = "View my Portfolio"
 link = "work"
 
 

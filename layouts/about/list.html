@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-lg-8 mx-auto text-center py-5 px-sm-3 px-md-5 shadow">
         <img src="{{ .Params.Image | relURL }}" alt="{{ .Params.author }}"
-          class="img-fluid d-block mx-auto rounded-circle mb-4 author-thumb">
+          class="img-fluid d-block mx-auto rounded mb-4 author-thumb">
         <h4>{{ .Title | markdownify }}</h4>
         <div class="content">
           {{ .Content }}
@@ -29,7 +29,7 @@
             <h3 class="mt-0">{{ .Site.Params.about.cta.title | markdownify }}</h3>
             <p>{{ .Site.Params.about.cta.description | markdownify }}</p>
             {{ if .Site.Params.about.cta.button.enable }}
-            <a href="{{ .Site.Params.cta.about.button.link | absURL }}"
+            <a href="{{ .Site.Params.about.cta.button.link | absURL }}"
               class="btn btn-primary">{{ .Site.Params.about.cta.button.label }}</a>
             {{ end }}
           </div>

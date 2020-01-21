@@ -1,0 +1,66 @@
+projects:
+# project category
+- title: Websites
+  project:
+  # Personal Site
+  - name: Joshua Booth
+    image: "/images/work/joshuabooth.nz.png"
+    link: https://joshuabooth.nz/
+    repo: https://github.com/Joshua-Booth/website
+  # Realive Equipped Youth Manual
+  - name: Realive Equipped Youth Manual
+    image: "/images/work/realiveyouth.png"
+    link: https://realiveyouth.netlify.com/
+    repo: private
+  # Sophie Booth
+  - name: Sophie Booth
+    image: "/images/work/sophiebooth.nz.png"
+    link: https://sophiebooth.nz/
+    repo: https://github.com/Joshua-Booth/sophie
+  # Audio Bible Devotions
+  - name: Audio Bible Devotions
+    image: "/images/work/bobandtricia.nz.png"
+    link: https://bobandtricia.nz/
+    repo: https://github.com/Joshua-Booth/audio-devotions
+
+
+# project category
+- title: Software
+  project:
+  # Price Finder Script
+  - name: Price Finder
+    image: "/images/work/price_finder.svg"
+    repo: "https://github.com/Joshua-Booth/price-finder"
+  # Encryption and Decryption Tool Script
+  - name: Cryptography Tool
+    image: "/images/work/data_process.svg"
+    repo: "https://github.com/Joshua-Booth/cryptography"
+  # Docx Commaind-line Diary Script
+  - name: Command-line Diary 
+    image: "/images/work/book_lover.svg"
+    repo: "https://github.com/Joshua-Booth/docx-diary"
+
+
+# project category
+- title: Designs
+  project:
+  - name: Realive Equipped Youth Manual
+    code: "B6HoM8Xpv8F"
+  - name: Realive Equipped Youth Manual
+    code: "B6HoDz3pfJT"
+  - name: Realive Equipped Youth Manual
+    code: "B6Hn4cxpbjG"
+  
+  - name: Eccomerce Site
+    code: "B15Uli8JM31"
+  - name: Eccomerce Site
+    code: "B15UgdeJefo"
+  - name: Eccomerce Site
+    code: "B15UcfeJ_fL"
+  
+  - name: Michell Manese Site
+    code: "Bzz6bY7gI8O"
+  - name: Michell Manese Site
+    code: "Bzz6O28gmql"
+  - name: Michell Manese Site
+    code: "Bzz5G6pgPL8"
