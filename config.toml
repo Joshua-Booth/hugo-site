@@ -79,8 +79,8 @@ logo = "images/logo.svg"
 # meta data
 author = "Joshua Booth"
 description = "Joshua Booth's personal website. Here you can find all about him, his work and how to contact him."
-# google analitycs ID
-googleAnalitycsID = "UA-155146153-1"
+# Google Analytics ID
+googleAnalyticsID = "UA-155146153-1"
 # contact form action
 contactFormAction = "https://formspree.io/xyyknvro" # contact form works with : https://formspree.io
 # copyright
