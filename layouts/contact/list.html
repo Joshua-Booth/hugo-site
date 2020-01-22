@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-lg-5 mb-5">
-        <h2 class="mb-4">{{ .Title | markdownify }}</h2>
+        <h1 class="h2 text-black mb-4">{{ .Title | markdownify }}</h1>
         <div class="content">{{ .Content }}</div>
         <form method="POST" action="{{ .Site.Params.contactFormAction | safeURL}}" class="row">
           <div class="col-md-6">
