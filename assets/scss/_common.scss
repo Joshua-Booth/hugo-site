@@ -180,3 +180,22 @@ textarea.form-control{
 .page-link:focus{
   box-shadow: none;
 }
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+  border-right: 1.5px #000 solid;
+  border-bottom: 1.5px #000 solid;
+  animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px) rotate(-45deg);
+  }
+}

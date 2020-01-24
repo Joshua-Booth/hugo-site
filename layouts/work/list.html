@@ -30,12 +30,16 @@
                   <img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}"
                     class="card-img-top {{ if eq $index 1 }}w-50 pt-4 mx-auto{{ else }}shadow-sm{{ end }}">
                   <div class="card-body">
+
                     <h4 class="h5 mb-4">
                       <a class="text-dark" href="{{ .link | safeURL }}"
                         target="_blank" rel="noopener noreferrer">
                       {{ .name | markdownify }}
+                      <div class="arrow d-inline-block"></div>
                       </a>
                     </h4>
+
+                    <hr>
 
                     {{ if and .link (ne .link "") }}
                     <a href="{{ .link | safeURL }}" role="button" class="btn btn-sm btn-primary mb-1"
