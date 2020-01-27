@@ -1,17 +1,21 @@
 {{ "<!-- navigation -->" | safeHTML }}
 <header class="fixed-top navigation">
   <div class="container">
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img class="img-fluid" style="width:10em" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"></a>
+      <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        <img class="img-fluid" style="width:10em" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}">
+      </a>
       <button class="navbar-toggler border-0" aria-label="Toggle Navigation" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu h3"></i>
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navigation">
+        {{ $currentPage := .URL }}
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+            <a class='nav-link mt-2 py-2 px-4 {{ if eq .URL "/" }}text-primary nav-home-link{{ end }}'
+              href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
           </li>
           {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
@@ -22,19 +26,21 @@
               </a>
               <div class="dropdown-menu">
                 {{ range .Children }}
-                <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                <a class='dropdown-item {{ if eq .URL (trim $currentPage "/") }}bg-primary rounded text-white{{ end }}'
+                  href="{{ .URL | absURL }}">{{ .Name }}</a>
                 {{ end }}
               </div>
             </li>
             {{ else }}
             <li class="nav-item">
-              <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              <a class='nav-link mt-2 py-2 px-4 {{ if eq .URL (trim $currentPage "/") }}bg-primary rounded text-white{{ end }}'
+                href="{{ .URL | absURL }}">{{ .Name }}</a>
             </li>
             {{ end }}
           {{ end }}
         </ul>
         {{ if .Site.Params.search.enable }}
-        {{ "<!-- search -->" | safeHTML }}
+        {{ "<!-- Search -->" | safeHTML }}
         <div class="search">
           <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
           <div class="search-wrapper">

@@ -23,6 +23,14 @@
   }
 }
 
+.nav-home-link {
+  @include desktop {
+    background: $primary-color !important;
+    color: $white !important;
+    border-radius: .25rem !important;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: $text-color-dark;
   &:hover{
