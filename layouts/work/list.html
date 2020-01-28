@@ -32,11 +32,15 @@
                   <div class="card-body">
 
                     <h4 class="h5 mb-4">
-                      <a class="text-dark" href="{{ .link | safeURL }}"
+                      {{ if isset . "link" }}
+                      <a class="text-dark"href="{{ .link | safeURL }}"
                         target="_blank" rel="noopener noreferrer">
-                      {{ .name | markdownify }}
-                      <div class="arrow d-inline-block"></div>
+                        {{ .name | markdownify }}
+                        <div class="arrow d-inline-block"></div>
                       </a>
+                      {{ else }}
+                        {{ .name | markdownify }}
+                      {{ end }}
                     </h4>
 
                     <hr>
