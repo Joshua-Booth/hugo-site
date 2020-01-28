@@ -1,8 +1,8 @@
-############################ Default configuration #########################
+########################## Default Configuration #########################
 baseURL = "https://joshuabooth.nz/"
 languageCode = "en-us"
 # site title 
-title = "Joshua Booth"
+title = "Joshua Booth - Junior Software Developer"
 # post pagination
 paginate = "5"
 # post excerpt
@@ -14,7 +14,7 @@ unsafe= true
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
 
-########################## Plugins ######################################
+########################## Plugins ###################################
 
 # css plugins
 [[params.plugins.css]]
@@ -35,7 +35,7 @@ URL = "plugins/search/mark.js"
 URL = "plugins/search/search.js"
 
 
-########################### Navigation ###################################
+########################### Navigation ###############################
 
 # main menu
 [[menu.main]]
@@ -70,7 +70,7 @@ name = "Contact"
 weight = 3
 
 
-######################### Default Parameters ###########################
+######################### Default Parameters #########################
 [params]
 # home
 home = "Home"
@@ -78,18 +78,18 @@ home = "Home"
 logo = "images/logo.svg"
 # meta data
 author = "Joshua Booth"
-description = "Joshua Booth's personal website. Here you can find all about him, his work and how to contact him."
+description = "Joshua Booth, junior software developer passoniate about full-stack web development and design. Here on my personal website you can find all about me, my work and how to contact me."
 # Google Analytics ID
 googleAnalyticsID = "UA-155146153-1"
 # contact form action
-contactFormAction = "https://formspree.io/xyyknvro" # contact form works with : https://formspree.io
+contactFormAction = "https://formspree.io/xyyknvro"
 # copyright
 copyright = "&copy; 2020 [Joshua Booth](https://joshuabooth.nz) All Rights Reserved"
 
 # preloader
 [params.preloader]
 enable = true
-preloader = "images/logo.svg" # use png, jpg, svg or gif format
+preloader = "images/logo.svg" # needs to be png, jpg, svg or gif format
 
 # search
 [params.search]
@@ -100,7 +100,7 @@ enable = false
 enable = false
 
 
-####################### Banner #######################################
+######################## Banner ######################################
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
 title = "Software Developer"
@@ -108,7 +108,7 @@ subTitle = "Design & Full-stack Development"
 image = "images/banner/web_developer.svg"
 
 
-######################## Call to Action ###############################
+######################## Call to Action ##############################
 [params.cta]
 enable = true
 image = "images/get_in_touch.svg"
@@ -120,7 +120,7 @@ label = "Contact me"
 link = "contact"
 
 
-############################## Social Site ##########################
+############################## Social Site ###########################
 [[params.social]]
 name = "Instagram"
 icon = "ti-instagram" # themify icon pack https://themify.me/themify-icons

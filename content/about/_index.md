@@ -7,9 +7,9 @@ description = "Find out about Joshua Booth the Full-stack developer and designer
 +++
 
 {{< aboutIntro >}}
-Hey, I'm Josh a full-stack developer and designer based in Auckland.
-In December 2019, I graduated with NZ Diploma of Software Development from 
-Techtorium NZIIT.
+Hey, I'm Josh a junior full-stack developer and designer based in Auckland.
+In December 2019, I graduated with a NZ Diploma of Software Development from
+<a href="https://techtorium.ac.nz" alt="Techtorium NZIIT" target="_blank" rel="noreffer noopener">Techtorium NZIIT</a>.
 {{< /aboutIntro >}}
 
 {{< socialMedia >}}
