@@ -3,8 +3,8 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 mx-auto px-0 px-sm-2 py-0 block mb-0">
-          <div class="row px-sm-4">
+      <div class="col-lg-12 mx-auto px-0 px-sm-2 py-0 block mb-0 overflow-hidden">
+        <div class="row px-sm-4">
             <!-- Project Headings -->
             <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10">
                 <h1 class="h2 text-black px-5 px-sm-0">{{ .Title | markdownify }}</h1>
@@ -51,7 +51,7 @@
             <!-- Project Image -->
             {{ if .Params.Image }}
             <img src="{{ .Params.Image | relURL }}" alt="{{ .Title | markdownify }}"
-                class="img-fluid w-100 mb-4 mt-2 shadow">
+                class="w-100 h-100 mb-4 mt-2 shadow">
             {{ end }}
         </div>
         
