@@ -7,7 +7,7 @@
 			<!-- design -->
 			<div class="col-sm-4">
 				<h5 class="pb-4">Design</h5 class="pb-2">
-				<ul>
+				<ul class="skills">
 				{{ range .Site.Params.skills.design }}
 					<li class="pl-0">
 						<img src="{{.icon}}" class="w-25 mb-2 pb-1" aria-label="{{ .name }}"
@@ -21,7 +21,7 @@
 			<!-- front end -->
 			<div class="col-sm-4">
 				<h5 class="pb-4">Front End</h5>
-				<ul>
+				<ul class="skills">
 				{{ range .Site.Params.skills.front }}
 					<li class="pl-0">
 						<img src="{{.icon}}" class="w-25 mb-2" aria-label="{{ .name }}"
@@ -35,7 +35,7 @@
 			<!-- back end -->
 			<div class="col-sm-4">
 				<h5 class="pb-4">Back End</h5 class="pb-2">
-				<ul>
+				<ul class="skills">
 				{{ range .Site.Params.skills.back }}
 					<li class="pl-0">
 						<img src="{{.icon}}" class="w-25 mb-2" aria-label="{{ .name }}"

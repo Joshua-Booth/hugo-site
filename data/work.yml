@@ -6,6 +6,7 @@ projects:
   - name: Joshua Booth
     image: "/images/work/joshuabooth.nz.png"
     link: https://joshuabooth.nz/
+    caseStudy: /work/websites/joshua-booth
     repo: https://github.com/Joshua-Booth/website
   # Realive Equipped Youth Manual
   - name: Realive Equipped Youth Manual
@@ -15,7 +16,7 @@ projects:
   # Sophie Booth
   - name: Sophie Booth
     image: "/images/work/sophiebooth.nz.png"
-    link: https://sophiebooth.nz/
+    link: https://sophiebooth.nz/old
     repo: https://github.com/Joshua-Booth/sophie
   # Audio Bible Devotions
   - name: Audio Bible Devotions
@@ -34,7 +35,7 @@ projects:
   # Encryption and Decryption Tool Script
   - name: Cryptography Tool
     image: "/images/work/data_process.svg"
-    repo: "https://github.com/Joshua-Booth/cryptography"
+    repo: "https://github.com/Joshua-Booth/text-cryptography"
   # Docx Commaind-line Diary Script
   - name: Command-line Diary 
     image: "/images/work/book_lover.svg"

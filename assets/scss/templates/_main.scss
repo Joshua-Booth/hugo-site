@@ -106,10 +106,21 @@
 
     li {
       position: relative;
-      padding-left: 20px;
+      margin-left: 20px;
+      padding-left: 10px;
       margin-bottom: 15px;
-      list-style-type: none;
+      list-style-type: initial;
     }
+  }
+
+  .skills li {
+    margin-left: 0;
+    padding-left: 20px;
+    list-style-type: none;
+  }
+
+  figure img {
+    margin-bottom: 0;
   }
 
   table {

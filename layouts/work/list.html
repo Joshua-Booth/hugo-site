@@ -23,39 +23,57 @@
             id="{{.title | urlize}}" role="tabpanel">
 
             <div class="row">
+            <!-- Loop over websites and software projects -->
             {{ if ne $index 2 }}
               {{ range .project}}
               <div class="col-md-6 mb-4 px-1">
                 <div class="card border-0 shadow">
-                  <img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}"
-                    class="card-img-top {{ if eq $index 1 }}w-50 pt-4 mx-auto{{ else }}shadow-sm{{ end }}">
+                  {{ if or (isset . "link") (isset . "caseStudy") }}
+                  <a alt="{{ .title }}" rel="noopener noreferrer"
+                      {{ if isset . "caseStudy" }}
+                          href='{{ .caseStudy | safeURL }}'
+                      {{ else }}
+                          href='{{ .link | safeURL }}'
+                      {{ end }}
+                    target='{{ if not (isset . "caseStudy") }}_blank{{ end }}'>
+                  {{ end }}
+                    <img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}"
+                      class="card-img-top {{ if eq $index 1 }}w-50 pt-4 mx-auto{{ else }}shadow-sm{{ end }}">
+                  {{ if or (isset . "link") (isset . "caseStudy") }}</a>{{ end }}
+                  
                   <div class="card-body">
-
                     <h4 class="h5 mb-4">
-                      {{ if isset . "link" }}
-                      <a class="text-dark"href="{{ .link | safeURL }}"
-                        target="_blank" rel="noopener noreferrer">
-                        {{ .name | markdownify }}
-                        <div class="arrow d-inline-block"></div>
+                      {{ if or (isset . "link") (isset . "caseStudy") }}
+                      <a class="text-dark" alt="{{ .title }}" rel="noopener noreferrer"
+                          href='{{ if isset . "caseStudy" }}
+                                  {{ .caseStudy | safeURL }}
+                              {{ else }}
+                                  {{ .link | safeURL }}
+                              {{ end }}'
+                          target='{{ if eq .caseStudy "" }}_blank{{ end }}'>
+                      {{ .name | markdownify }}
+                      <div class="arrow d-inline-block"></div>
                       </a>
                       {{ else }}
-                        {{ .name | markdownify }}
+                          {{ .name | markdownify }}
                       {{ end }}
                     </h4>
 
                     <hr>
 
+                    <!-- Visit Site Button -->
                     {{ if and .link (ne .link "") }}
                     <a href="{{ .link | safeURL }}" role="button" class="btn btn-sm btn-primary mb-1"
                       target="_blank" rel="noopener noreferrer">
                       <i class="ti-new-window pr-1"></i> Visit Site
                     </a>
                     {{ end }}
-                    
+                    <!-- Private Code Button -->                   
                     {{if eq .repo "private" }}
-                    <span class="btn btn-sm btn-light mb-1 disabled" style="opacity: 1" aria-disabled="true">
+                    <a class="btn btn-sm btn-light mb-1 disabled" href="#" style="opacity: 1" aria-disabled="true">
                       <i class="ti-lock pr-1"></i> Private
-                    </span>
+                    </a>
+                    <!-- View Code Button -->
                     {{ else if and .repo (ne .repo "") }}
                     <a href="{{ .repo | safeURL }}" role="button" class="btn btn-sm btn-light mb-1" 
                       target="_blank" rel="noopener noreferrer">
@@ -67,6 +85,7 @@
               </div>
               {{ end }} 
             {{ else }}
+              <!-- Loop over instagram project photos -->
               {{ range .project }}
               <div class="col-md-4 col-12 text-md-center mx-auto mb-4">
                 <a href="https://instagram.com/p/{{ .code }}" target="_blank" rel="noopener noreferrer">
