@@ -12,16 +12,19 @@ projects:
   - name: Realive Equipped Youth Manual
     image: "/images/work/realiveyouth.png"
     link: https://realiveyouth.netlify.com/
+    caseStudy: /work/websites/equipped-youth
     repo: private
   # Sophie Booth
   - name: Sophie Booth
     image: "/images/work/sophiebooth.nz.png"
     link: https://sophiebooth.nz/old
+    caseStudy: /work/websites/sophie-booth
     repo: https://github.com/Joshua-Booth/sophie
   # Audio Bible Devotions
   - name: Audio Bible Devotions
     image: "/images/work/bobandtricia.nz.png"
     link: https://bobandtricia.nz/
+    caseStudy: /work/websites/audio-devotions
     repo: https://github.com/Joshua-Booth/audio-devotions
 
 
