@@ -48,6 +48,14 @@ projects:
 # project category
 - title: Designs
   project:
+
+  - name: "Joshua Booth's Site"
+    code: "B8R64h-pbJN"
+  - name: "Joshua Booth's Site"
+    code: "B8R6y98pJzo"
+  - name: "Joshua Booth's Site"
+    code: "B8R6uTtJqb7"
+
   - name: Realive Equipped Youth Manual
     code: "B6HoM8Xpv8F"
   - name: Realive Equipped Youth Manual
@@ -68,3 +76,6 @@ projects:
     code: "Bzz6O28gmql"
   - name: Michell Manese Site
     code: "Bzz5G6pgPL8"
+
+  - name: Chat Application
+    code: "B8ktSdsJQM5"
