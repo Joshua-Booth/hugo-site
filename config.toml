@@ -2,7 +2,7 @@
 baseURL = "https://joshuabooth.nz/"
 languageCode = "en-us"
 # site title 
-title = "Joshua Booth - Junior Software Developer"
+title = "Joshua Booth - Full-Stack Software Developer"
 # post pagination
 paginate = "5"
 # post excerpt
@@ -78,7 +78,7 @@ home = "Home"
 logo = "images/logo.svg"
 # meta data
 author = "Joshua Booth"
-description = "Joshua Booth, junior software developer passoniate about full-stack web development and design. Here on my personal website you can find all about me, my work and how to contact me."
+description = "Joshua Booth, full-stack software developer passoniate about web development and design. Here on my personal website you can find all about me, my work and how to contact me."
 # Google Analytics ID
 googleAnalyticsID = "UA-155146153-1"
 # contact form action
