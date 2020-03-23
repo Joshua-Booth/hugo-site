@@ -4,7 +4,7 @@ subtitle: "Informational PWA"
 link: https://realiveyouth.netlify.com/
 repo: private
 description: "Progressive web application built with the static site generator Hugo, it's styled with UIkit and CSS and automatically deploys from GitHub."
-image: "/images/work/realiveyouth.png"
+image: "/images/work/realiveyouth.jpg"
 role: "Scrum Master and Developer"
 ---
 

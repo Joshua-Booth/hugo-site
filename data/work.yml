@@ -10,7 +10,7 @@ projects:
     repo: https://github.com/Joshua-Booth/website
   # Realive Equipped Youth Manual
   - name: Realive Equipped Youth Manual
-    image: "/images/work/realiveyouth.png"
+    image: "/images/work/realiveyouth.jpg"
     link: https://realiveyouth.netlify.com/
     caseStudy: /work/websites/equipped-youth
     repo: private
@@ -49,6 +49,13 @@ projects:
 - title: Designs
   project:
 
+  - name: Chat Application
+    code: "B-EEOClJNGW"
+  - name: Chat Application
+    code: "B-EEGGlpBZn"
+  - name: Chat Application
+    code: "B8ktSdsJQM5"
+
   - name: "Joshua Booth's Site"
     code: "B8R64h-pbJN"
   - name: "Joshua Booth's Site"
@@ -76,6 +83,3 @@ projects:
     code: "Bzz6O28gmql"
   - name: Michell Manese Site
     code: "Bzz5G6pgPL8"
-
-  - name: Chat Application
-    code: "B8ktSdsJQM5"
