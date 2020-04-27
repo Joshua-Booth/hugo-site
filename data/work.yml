@@ -35,10 +35,18 @@ projects:
   - name: Price Finder
     image: "/images/work/price_finder.svg"
     repo: "https://github.com/Joshua-Booth/price-finder"
+  # Just Drive Game
+  - name: Just Drive
+    image: "/images/work/car.svg"
+    repo: "https://github.com/Joshua-Booth/just-drive"
   # Encryption and Decryption Tool Script
   - name: Cryptography Tool
     image: "/images/work/data_process.svg"
     repo: "https://github.com/Joshua-Booth/text-cryptography"
+  # Just Drive Game
+  - name: Extreme Pong
+    image: "/images/work/gaming.svg"
+    repo: "https://github.com/Joshua-Booth/extreme-pong"
   # Docx Commaind-line Diary Script
   - name: Command-line Diary 
     image: "/images/work/book_lover.svg"
@@ -48,6 +56,15 @@ projects:
 # project category
 - title: Designs
   project:
+
+  - name: "Checkout Page"
+    code: "B_Y6anlpBIL"
+
+  - name: "Social Media Application"
+    code: "B_G27mwprze"
+
+  - name: Tax Calculator Application
+    code: "B-Gp7qGpIEY"
 
   - name: Chat Application
     code: "B-EEOClJNGW"
