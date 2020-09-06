@@ -17,7 +17,6 @@ projects:
   # Sophie Booth
   - name: Sophie Booth
     image: "/images/work/sophiebooth.nz.png"
-    link: https://sophiebooth.nz/old
     caseStudy: /work/websites/sophie-booth
     repo: https://github.com/Joshua-Booth/sophie
   # Audio Bible Devotions
@@ -56,6 +55,15 @@ projects:
 # project category
 - title: Designs
   project:
+
+  - name: "Countdown Timer"
+    code: "CEyHmHPBH2H"
+
+  - name: "Music Player"
+    code: "CEgSAhTBPIJ"
+
+  - name: "Coffee Shop"
+    code: "CBXDAWIpShw"
 
   - name: "Checkout Page"
     code: "B_Y6anlpBIL"
