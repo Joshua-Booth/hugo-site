@@ -3,7 +3,7 @@
   command = "hugo"
   
 [build.environment]
-  HUGO_VERSION = "0.63.0"
+  HUGO_VERSION = "0.74.3"
 
 [[headers]]
   for = "/*"
