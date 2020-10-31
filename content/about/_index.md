@@ -27,5 +27,5 @@ about working as a developer.
 
 {{< aboutSection "left" "/images/about/soccer.svg" >}}
 Outside of my work I love [designing](https://instagram.com/joshuabooth.nz),
-watching Football, reading and keeping myself fit. 
+photography, reading and learning new skills. 
 {{< /aboutSection >}}

@@ -149,7 +149,7 @@ enable = true
 [params.about.cta]
 enable = true
 image = "images/work.svg"
-title = "Websites, Software and Designs"
+title = "Websites, Software and UI Designs"
 description = "Take a look at my work and portfolio"
 [params.about.cta.button]
 enable = true
