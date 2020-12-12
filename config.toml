@@ -1,5 +1,5 @@
 ########################## Default Configuration #########################
-baseURL = "https://joshuabooth.nz/"
+baseURL = "https://www.joshuabooth.nz/"
 languageCode = "en-us"
 # site title 
 title = "Joshua Booth - Full-Stack Software Developer"
@@ -75,7 +75,7 @@ weight = 3
 # home
 home = "Home"
 # logo
-logo = "images/logo.svg"
+logo = "images/icons/logo.svg"
 # meta data
 author = "Joshua Booth"
 description = "Joshua Booth, full-stack software developer passoniate about web development and design. Here on my personal website you can find all about me, my work and how to contact me."
@@ -89,7 +89,7 @@ copyright = "&copy; 2020 [Joshua Booth](https://joshuabooth.nz) All Rights Reser
 # preloader
 [params.preloader]
 enable = true
-preloader = "images/logo.svg" # needs to be png, jpg, svg or gif format
+preloader = "images/icons/logo.svg" # needs to be png, jpg, svg or gif format
 
 # search
 [params.search]
@@ -103,7 +103,7 @@ enable = false
 ######################## Banner ######################################
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
-title = "Software Developer"
+title = "Joshua Booth"
 subTitle = "Design & Full-stack Development"
 image = "images/banner/web_developer.svg"
 
