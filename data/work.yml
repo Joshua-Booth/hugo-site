@@ -50,3 +50,72 @@ projects:
   - name: Command-line Diary 
     image: "/images/work/book_lover.svg"
     repo: "https://github.com/Joshua-Booth/docx-diary"
+
+
+# project category
+- title: Designs
+  project:
+
+  - name: "Countdown Timer"
+    code: "CEyHmHPBH2H"
+    image: "/images/work/designs/countdown-timer.jpg"
+
+  - name: "Music Player"
+    code: "CEgSAhTBPIJ"
+    image: "/images/work/designs/music-player.jpg"
+
+  - name: "Coffee Shop"
+    code: "CBXDAWIpShw"
+    image: "/images/work/designs/coffee-shop.jpg"
+
+  - name: "Checkout Page"
+    code: "B_Y6anlpBIL"
+    image: "/images/work/designs/checkout-page.jpg"
+
+  - name: "Social Media Application"
+    code: "B_G27mwprze"
+    image: "/images/work/designs/social-media-app.jpg"
+
+  - name: Tax Calculator Application
+    code: "B-Gp7qGpIEY"
+    image: "/images/work/designs/tax-calculator.jpg"
+
+  - name: Chat Application
+    code: "B-EEOClJNGW"
+    image: "images/work/designs/chat-app-1.jpg"
+  - name: Chat Application
+    code: "B-EEGGlpBZn"
+    image: "images/work/designs/chat-app-2.jpg"
+  - name: Chat Application
+    code: "B8ktSdsJQM5"
+    image: "images/work/designs/chat-app-3.jpg"
+
+  - name: "Joshua Booth's Site"
+    code: "B8R64h-pbJN"
+    image: "images/work/designs/josh-site-1.jpg"
+  - name: "Joshua Booth's Site"
+    code: "B8R6y98pJzo"
+    image: "images/work/designs/josh-site-2.jpg"
+  - name: "Joshua Booth's Site"
+    code: "B8R6uTtJqb7"
+    image: "images/work/designs/josh-site-3.jpg"
+
+  - name: Realive Equipped Youth Manual
+    code: "B6HoM8Xpv8F"
+    image: "images/work/designs/ryem-1.jpg"
+  - name: Realive Equipped Youth Manual
+    code: "B6HoDz3pfJT"
+    image: "images/work/designs/ryem-2.jpg"
+  - name: Realive Equipped Youth Manual
+    code: "B6Hn4cxpbjG"
+    image: "images/work/designs/ryem-3.jpg"
+  
+  - name: Ecommerce Site
+    code: "B15Uli8JM31"
+    image: "images/work/designs/ecommerce-site-1.jpg"
+  - name: Ecommerce Site
+    code: "B15UgdeJefo"
+    image: "images/work/designs/ecommerce-site-2.jpg"
+  - name: Ecommerce Site
+    code: "B15UcfeJ_fL"
+    image: "images/work/designs/ecommerce-site-3.jpg"

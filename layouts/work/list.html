@@ -84,6 +84,24 @@
                 </div>
               </div>
               {{ end }}
+            {{ else }}
+              <!-- Loop over instagram project photos -->
+              {{ range .project }}
+              <div class="col-md-4 col-12 text-md-center mx-auto mb-4">
+                <a
+                  href="https://instagram.com/p/{{ .code }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="mx-auto w-100"
+                    src="{{ .image | relURL }}"
+                    alt="{{ .name | markdownify }}"
+                    loading=lazy
+                  />
+                </a>
+              </div>
+              {{ end }}
             {{ end }}
             </div>
           </div>
