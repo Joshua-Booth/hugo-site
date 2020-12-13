@@ -4,17 +4,17 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center py-5 px-sm-3 px-md-5 shadow">
-        <img src="{{ .Params.Image | relURL }}" alt="{{ .Params.author }}"
-          class="img-fluid d-block mx-auto rounded mb-4 author-thumb">
+        <img
+          src="{{ .Params.Image | relURL }}"
+          alt="{{ .Params.author }}"
+          class="img-fluid d-block mx-auto rounded mb-4 author-thumb"
+        />
         <h1 class="h2 text-black pb-3">{{ .Title | markdownify }}</h1>
-        <div class="content">
-          {{ .Content }}
-        </div>
+        <div class="content">{{ .Content }}</div>
       </div>
     </div>
   </div>
 </section>
-
 
 <!-- cta -->
 {{ if .Site.Params.about.cta.enable }}
@@ -24,13 +24,26 @@
       <div class="col-lg-8 mx-auto pt-3">
         <div class="row shadow bg-white p-5">
           <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
-            <img src="{{ .Site.Params.about.cta.image | relURL }}" class="mr-4" alt="..."></div>
+            <img
+              src="{{ .Site.Params.about.cta.image | relURL }}"
+              class="mr-4"
+              alt="..."
+            />
+          </div>
           <div class="col-md-8 text-center text-md-left">
-            <h3 class="mt-0">{{ .Site.Params.about.cta.title | markdownify }}</h3>
+            <h3 class="mt-0">
+              {{ .Site.Params.about.cta.title | markdownify }}
+            </h3>
+            
             <p>{{ .Site.Params.about.cta.description | markdownify }}</p>
+            
             {{ if .Site.Params.about.cta.button.enable }}
-            <a href="{{ .Site.Params.about.cta.button.link | absURL }}"
-              class="btn btn-primary">{{ .Site.Params.about.cta.button.label }}</a>
+            <a
+              href="{{ .Site.Params.about.cta.button.link | absURL }}"
+              class="btn btn-primary"
+            >
+              {{ .Site.Params.about.cta.button.label }}
+            </a>
             {{ end }}
           </div>
         </div>
@@ -40,7 +53,6 @@
 </section>
 {{ end }}
 <!-- /cta -->
-
 
 {{ if .Site.Params.blog.enable }}
 <!-- blog -->
@@ -52,7 +64,7 @@
         <div class="bg-white shadow block">
           {{ $name:= .Title }}
           {{ range where .Site.RegularPages "Params.author" $name }}
-          {{ .Render "article" }}
+            {{ .Render "article" }}
           {{ end }}
         </div>
       </div>

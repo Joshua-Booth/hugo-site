@@ -2,15 +2,26 @@
 
 <section class="section">
   <div class="container">
-    <h1 class="h2 text-black text-center text-sm-left pb-5 pt-0">Work Portfolio</h1>
+    <h1 class="h2 text-black text-center text-sm-left pb-5 pt-0">
+      Work Portfolio
+    </h1>
+
     <div class="row">
       <div class="col-sm-3 col-xs-12 pb-4">
-        <div class="nav nav-tab flex-row text-center text-sm-left mx-auto col-12 pr-0 pr-sm-2 justify-content-center"
-          role="tablist" aria-orientation="horizontal|vertical">
+        <div
+          class="nav nav-tab flex-row text-center text-sm-left mx-auto col-12 pr-0 pr-sm-2 justify-content-center"
+          role="tablist"
+          aria-orientation="horizontal|vertical"
+        >
           {{ range $index, $elemen:= .Site.Data.work.projects }}
-          <a class="nav-link text-center text-sm-left col-4 col-sm-12 mx-auto 
-            mx-sm-2 mx-md-5 px-2 {{ if eq $index 0}} active {{ end }}" data-toggle="pill"
-            href="#{{.title | urlize}}" role="tab" aria-label="{{ .title }}">
+          <a
+            class="nav-link text-center text-sm-left col-4 col-sm-12 mx-auto 
+                mx-sm-2 mx-md-5 px-2 {{ if eq $index 0}} active {{ end }}"
+            data-toggle="pill"
+            href="#{{.title | urlize}}"
+            role="tab"
+            aria-label="{{ .title }}"
+          >
             {{ .title }}
           </a>
           {{ end }}
@@ -19,9 +30,11 @@
       <div class="col-9 col-xs-8 text-center mx-auto">
         <div class="tab-content">
           {{ range $index, $elemen:= .Site.Data.work.projects }}
-          <div class="tab-pane fade {{ if eq $index 0}} show active {{ end }}"
-            id="{{.title | urlize}}" role="tabpanel">
-
+          <div
+            class="tab-pane fade {{ if eq $index 0}} show active {{ end }}"
+            id="{{.title | urlize}}"
+            role="tabpanel"
+          >
             <div class="row">
             <!-- Loop over websites and software projects -->
             {{ if ne $index 2 }}
@@ -29,28 +42,37 @@
               <div class="col-md-6 mb-4 px-1">
                 <div class="card border-0 shadow">
                   {{ if or (isset . "link") (isset . "caseStudy") }}
-                  <a alt="{{ .title }}" rel="noopener noreferrer"
-                      {{ if isset . "caseStudy" }}
-                          href='{{ .caseStudy | safeURL }}'
-                      {{ else }}
-                          href='{{ .link | safeURL }}'
-                      {{ end }}
-                    target='{{ if not (isset . "caseStudy") }}_blank{{ end }}'>
+                  <a
+                    alt="{{ .title }}"
+                    rel="noopener noreferrer"
+                    {{ if isset . "caseStudy" }}
+                        href='{{ .caseStudy | safeURL }}'
+                    {{ else }}
+                        href='{{ .link | safeURL }}'
+                    {{ end }}
+                    target='{{ if not (isset . "caseStudy") }}_blank{{ end }}'
+                  >
                   {{ end }}
-                    <img src="{{ .image | relURL }}" alt="{{ .name | markdownify }}"
-                      class="card-img-top {{ if eq $index 1 }}w-50 pt-4 mx-auto{{ else }}shadow-sm{{ end }}">
+                    <img
+                      src="{{ .image | relURL }}"
+                      alt="{{ .name | markdownify }}"
+                      class="card-img-top {{ if eq $index 1 }}w-50 pt-4 mx-auto{{ else }}shadow-sm{{ end }}"
+                    />
                   {{ if or (isset . "link") (isset . "caseStudy") }}</a>{{ end }}
-                  
+
                   <div class="card-body">
                     <h4 class="h5 mb-4">
                       {{ if or (isset . "link") (isset . "caseStudy") }}
-                      <a class="text-dark" alt="{{ .title }}" rel="noopener noreferrer"
-                          href='{{ if isset . "caseStudy" }}
-                                  {{ .caseStudy | safeURL }}
-                              {{ else }}
-                                  {{ .link | safeURL }}
-                              {{ end }}'
-                          target='{{ if eq .caseStudy "" }}_blank{{ end }}'>
+                      <a
+                        class="text-dark"
+                        alt="{{ .title }}"
+                        rel="noopener noreferrer"
+                        href='{{ if isset . "caseStudy" }}
+                                {{ .caseStudy | safeURL }}
+                            {{ else }}
+                                {{ .link | safeURL }}
+                            {{ end }}'
+                        target='{{ if eq .caseStudy "" }}_blank{{ end }}'>
                       {{ .name | markdownify }}
                       <div class="arrow d-inline-block"></div>
                       </a>
@@ -63,20 +85,35 @@
 
                     <!-- Visit Site Button -->
                     {{ if and .link (ne .link "") }}
-                    <a href="{{ .link | safeURL }}" role="button" class="btn btn-sm btn-primary mb-1"
-                      target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="{{ .link | safeURL }}"
+                      role="button"
+                      class="btn btn-sm btn-primary mb-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i class="ti-new-window pr-1"></i> Visit Site
                     </a>
                     {{ end }}
                     <!-- Private Code Button -->                   
                     {{if eq .repo "private" }}
-                    <a class="btn btn-sm btn-light mb-1 disabled" href="#" style="opacity: 1" aria-disabled="true">
+                    <a
+                      class="btn btn-sm btn-light mb-1 disabled"
+                      href="#"
+                      style="opacity: 1"
+                      aria-disabled="true"
+                    >
                       <i class="ti-lock pr-1"></i> Private
                     </a>
                     <!-- View Code Button -->
                     {{ else if and .repo (ne .repo "") }}
-                    <a href="{{ .repo | safeURL }}" role="button" class="btn btn-sm btn-light mb-1" 
-                      target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="{{ .repo | safeURL }}"
+                      role="button"
+                      class="btn btn-sm btn-light mb-1" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i class="ti-files pr-1"></i> View Code
                     </a>
                     {{ end }}

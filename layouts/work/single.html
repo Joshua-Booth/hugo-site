@@ -3,108 +3,138 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 mx-auto px-0 px-sm-2 py-0 block mb-0 overflow-hidden">
+      <div
+        class="col-lg-12 mx-auto px-0 px-sm-2 py-0 block mb-0 overflow-hidden"
+      >
         <div class="row px-sm-4">
-            <!-- Project Headings -->
-            <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10">
-                <h1 class="h2 text-black px-5 px-sm-0">{{ .Title | markdownify }}</h1>
-                <h2 class="h5 text-secondary px-5 px-sm-0">
-                {{ if .Params.role }}
-                    {{ .Params.role | markdownify }}
-                {{ else }}
-                    {{ .Params.subtitle | markdownify }}
-                {{ end }}
-                </h2>
-            </div>
+          <!-- Project Headings -->
+          <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10">
+            <h1 class="h2 text-black px-5 px-sm-0">
+              {{ .Title | markdownify }}
+            </h1>
+            <h2 class="h5 text-secondary px-5 px-sm-0">
+              {{ if .Params.role }}
+                {{ .Params.role | markdownify }}
+              {{ else }}
+                {{ .Params.subtitle | markdownify }}
+              {{ end }}
+            </h2>
+          </div>
 
-            <!-- Project Buttons -->
-            <div class="col-4 col-sm-5 col-md-4 col-lg-3 col-xl-2 mt-2 text-right d-none d-sm-block flex-column">
-                <!-- Visit Site Button -->
-                {{ if and .Params.link (ne .Params.link "") }}
-                <a href="{{ .Params.link | safeURL }}" role="button"
-                   class="btn btn-sm col-10 col-md-11 p-md-1 btn-primary text-white mb-1"
-                   target="_blank" rel="noopener noreferrer">
-                    <i class="ti-new-window pr-1"></i>
-                    <span>Visit Site</span>
-                </a>
-                {{ end }}
-                <!-- Private Code Button --> 
-                {{if eq .Params.repo "private" }}
-                <a class="btn btn-sm col-10 col-md-11 p-md-1 btn-light mb-1 disabled" href="#"
-                   style="opacity: 1" aria-disabled="true" disabled>
-                    <i class="ti-lock px-1"></i>
-                    <span class="pr-2">Private</span>
-                </a>
-                <!-- View Code Button -->
-                {{ else if and .Params.repo (ne .Params.repo "") }}
-                <a href="{{ .Params.repo | safeURL }}" role="button"
-                   class="btn btn-sm col-10 col-md-11 p-md-1 btn-light text-decoration-none mb-1" 
-                   target="_blank" rel="noopener noreferrer">
-                    <i class="ti-files pr-1"></i>
-                    <span>View Code</span>
-                </a>
-                {{ end }}
-            </div>
+          <!-- Project Buttons -->
+          <div
+            class="col-4 col-sm-5 col-md-4 col-lg-3 col-xl-2 mt-2 text-right d-none d-sm-block flex-column"
+          >
+            <!-- Visit Site Button -->
+            {{ if and .Params.link (ne .Params.link "") }}
+            <a
+              href="{{ .Params.link | safeURL }}"
+              role="button"
+              class="btn btn-sm col-10 col-md-11 p-md-1 btn-primary text-white mb-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ti-new-window pr-1"></i>
+              <span>Visit Site</span>
+            </a>
+            {{ end }}
+            <!-- Private Code Button -->
+            {{if eq .Params.repo "private" }}
+            <a
+              class="btn btn-sm col-10 col-md-11 p-md-1 btn-light mb-1 disabled"
+              href="#"
+              style="opacity: 1"
+              aria-disabled="true"
+              disabled
+            >
+              <i class="ti-lock px-1"></i>
+              <span class="pr-2">Private</span>
+            </a>
+            <!-- View Code Button -->
+            {{ else if and .Params.repo (ne .Params.repo "") }}
+            <a
+              href="{{ .Params.repo | safeURL }}"
+              role="button"
+              class="btn btn-sm col-10 col-md-11 p-md-1 btn-light text-decoration-none mb-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ti-files pr-1"></i>
+              <span>View Code</span>
+            </a>
+            {{ end }}
+          </div>
         </div>
 
         <div class="row text-center col-12 mx-auto px-0 px-sm-4">
-            <!-- Project Image -->
-            {{ if .Params.Image }}
-            <img src="{{ .Params.Image | relURL }}" alt="{{ .Title | markdownify }}"
-                class="w-100 h-100 mb-4 mt-2 shadow">
-            {{ end }}
+          <!-- Project Image -->
+          {{ if .Params.Image }}
+          <img
+            src="{{ .Params.Image | relURL }}"
+            alt="{{ .Title | markdownify }}"
+            class="w-100 h-100 mb-4 mt-2 shadow"
+          />
+          {{ end }}
         </div>
-        
 
         <!-- Project Information -->
         <div class="content mt-4 mb-5 px-5 px-sm-4">
-            <!-- Description -->
-            <span class="font-italic">
-                {{ .Params.description }}
-            </span>
+          <!-- Description -->
+          <span class="font-italic">{{ .Params.description }}</span>
 
-            <!-- Mobile Buttons -->
-            <div class="row text-center d-block d-sm-none mt-4 pt-2 mx-n4">
-                <div class="col-5 d-inline-block px-0 mr-2">
-                    <!-- Visit Site Button -->
-                    {{ if and .Params.link (ne .Params.link "") }}
-                    <a href="{{ .Params.link | safeURL }}" role="button"
-                       class="btn btn-sm btn-primary col-12 text-white mb-1"
-                       target="_blank" rel="noopener noreferrer">
-                        <i class="ti-new-window pr-1"></i>
-                        <span>Visit Site</span>
-                    </a>
-                    {{ end }} 
-                </div>
-                
-                <div class="col-5 d-inline-block px-0">
-                    <!-- Private Code Button --> 
-                    {{if eq .Params.repo "private" }}
-                    <a class="btn btn-sm btn-light px-1 col-12 mb-1 disabled" href="#"
-                       style="opacity: 1" aria-disabled="true" disabled>
-                        <i class="ti-lock px-1"></i>
-                        <span class="pr-2">Private</span>
-                    </a>
-                    <!-- View Code Button -->
-                    {{ else if and .Params.repo (ne .Params.repo "") }}
-                    <a href="{{ .Params.repo | safeURL }}" role="button"
-                      class="btn btn-sm btn-light px-1 col-12 text-dark text-decoration-none mb-1" 
-                      target="_blank" rel="noopener noreferrer">
-                        <i class="ti-files pr-1"></i>
-                        <span>View Code</span>
-                    </a>
-                    {{ end }}
-                </div>
+          <!-- Mobile Buttons -->
+          <div class="row text-center d-block d-sm-none mt-4 pt-2 mx-n4">
+            <div class="col-5 d-inline-block px-0 mr-2">
+              <!-- Visit Site Button -->
+              {{ if and .Params.link (ne .Params.link "") }}
+              <a
+                href="{{ .Params.link | safeURL }}"
+                role="button"
+                class="btn btn-sm btn-primary col-12 text-white mb-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="ti-new-window pr-1"></i>
+                <span>Visit Site</span>
+              </a>
+              {{ end }}
             </div>
 
-            <!-- About the Project -->
-            <h3 class="pt-1 pt-sm-5">About this project</h3>
-            <hr>
-
-            <!-- Main Content -->
-            <div class="drop-cap">
-                {{ .Content }}
+            <div class="col-5 d-inline-block px-0">
+              <!-- Private Code Button -->
+              {{if eq .Params.repo "private" }}
+              <a
+                class="btn btn-sm btn-light px-1 col-12 mb-1 disabled"
+                href="#"
+                style="opacity: 1"
+                aria-disabled="true"
+                disabled
+              >
+                <i class="ti-lock px-1"></i>
+                <span class="pr-2">Private</span>
+              </a>
+              <!-- View Code Button -->
+              {{ else if and .Params.repo (ne .Params.repo "") }}
+              <a
+                href="{{ .Params.repo | safeURL }}"
+                role="button"
+                class="btn btn-sm btn-light px-1 col-12 text-dark text-decoration-none mb-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="ti-files pr-1"></i>
+                <span>View Code</span>
+              </a>
+              {{ end }}
             </div>
+          </div>
+
+          <!-- About the Project -->
+          <h3 class="pt-1 pt-sm-5">About this project</h3>
+          <hr />
+
+          <!-- Main Content -->
+          <div class="drop-cap">{{ .Content }}</div>
         </div>
       </div>
     </div>

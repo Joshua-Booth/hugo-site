@@ -1,26 +1,25 @@
 (function ($) {
-  'use strict';
+  "use strict";
 
-  // Preloader js    
-  $(window).on('load', function () {
-    $('.preloader').fadeOut(500);
+  // Preloader js
+  $(window).on("load", function () {
+    $(".preloader").fadeOut(500);
   });
 
   // Navigation
   $(window).scroll(function () {
-    if ($('.navigation').offset().top > 1) {
-      $('.navigation').addClass('nav-bg');
+    if ($(".navigation").offset().top > 1) {
+      $(".navigation").addClass("nav-bg");
     } else {
-      $('.navigation').removeClass('nav-bg');
+      $(".navigation").removeClass("nav-bg");
     }
   });
 
   // Search Form Open
-  $('#searchOpen').on('click', function () {
-    $('.search-wrapper').addClass('open');
+  $("#searchOpen").on("click", function () {
+    $(".search-wrapper").addClass("open");
   });
-  $('#searchClose').on('click', function () {
-    $('.search-wrapper').removeClass('open');
+  $("#searchClose").on("click", function () {
+    $(".search-wrapper").removeClass("open");
   });
-
 })(jQuery);
