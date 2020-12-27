@@ -104,7 +104,7 @@ enable = false
 [params.banner]
 bgImage = "images/banner/banner-bg.svg"
 title = "Joshua Booth"
-subTitle = "Design & Full-stack Development"
+subTitle = "Web Design & Development"
 image = "images/banner/web_developer.svg"
 
 
@@ -112,7 +112,7 @@ image = "images/banner/web_developer.svg"
 [params.cta]
 enable = true
 image = "images/get_in_touch.svg"
-title = "Hire me for your next project"
+title = "Let's talk about your next project"
 description = ""
 [params.cta.button]
 enable = true
@@ -120,7 +120,7 @@ label = "Contact me"
 link = "contact"
 
 
-############################## Social Site ###########################
+############################## Social Contact ###########################
 [[params.social]]
 name = "Instagram"
 icon = "ti-instagram" # themify icon pack https://themify.me/themify-icons
@@ -162,6 +162,12 @@ link = "work"
 enable = true
 
 [[params.skills.front]]
+name = "React"
+icon = "/images/about/react.svg"
+[[params.skills.front]]
+name = "Redux"
+icon = "/images/about/redux.svg"
+[[params.skills.front]]
 name = "HTML"
 icon = "/images/about/html.svg"
 [[params.skills.front]]
@@ -170,30 +176,63 @@ icon = "/images/about/css.svg"
 [[params.skills.front]]
 name = "JavaScript"
 icon = "/images/about/javascript.svg"
+[[params.skills.front]]
+name = "Sass"
+icon = "/images/about/sass.svg"
+[[params.skills.front]]
+name = "Bootstrap"
+icon = "/images/about/bootstrap.svg"
+[[params.skills.front]]
+name = "Hugo"
+icon = "/images/about/hugo.svg"
 
+[[params.skills.back]]
+name = "Django"
+icon = "/images/about/django.svg"
 [[params.skills.back]]
 name = "Python"
 icon = "/images/about/python.svg"
 [[params.skills.back]]
+name = ".NET Framework"
+icon = "/images/about/dot-net.svg"
+[[params.skills.back]]
 name = "C#"
 icon = "/images/about/csharp.svg"
 [[params.skills.back]]
-name = "MySQL & T-SQL"
+name = "MySQL"
 icon = "/images/about/mysql.svg"
+[[params.skills.back]]
+name = "Azure"
+icon = "/images/about/microsoft-azure.svg"
 
 [[params.skills.design]]
-name = "Adobe Photoshop"
+name = "Photoshop"
 icon = "/images/about/adobe-photoshop.svg"
 [[params.skills.design]]
-name = "Adobe Illustrator"
+name = "Illustrator"
 icon = "/images/about/adobe-illustrator.svg"
+[[params.skills.design]]
+name = "Figma"
+icon = "/images/about/figma.svg"
 [[params.skills.design]]
 name = "Adobe XD"
 icon = "/images/about/adobe-xd.svg"
 
 [[params.skills.tools]]
-name = "Git & GitHub"
+name = "Git"
 icon = "/images/about/git.svg"
 [[params.skills.tools]]
-name = "Visual Studio & Code"
+name = "GitHub"
+icon = "/images/about/github.svg"
+[[params.skills.tools]]
+name = "Visual Studio Code"
 icon = "/images/about/visual-studio-code.svg"
+[[params.skills.tools]]
+name = "Netlify"
+icon = "/images/about/netlify.svg"
+[[params.skills.tools]]
+name = "Jest"
+icon = "/images/about/jest.svg"
+[[params.skills.tools]]
+name = "Cypress"
+icon = "/images/about/cypress.svg"

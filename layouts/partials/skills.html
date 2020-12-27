@@ -1,0 +1,94 @@
+<!-- skills -->
+{{ if .Site.Params.skills.enable }}
+<section id="skills" class="section py-0 mt-0 pb-3">
+	<p id="design"></p>
+
+	<div class="container">
+		<h3>Skills</h3>
+		<div class="shadow rounded mt-5 p-4">
+			<div class="skills__header text-left">
+				<h4>
+					Design
+				</h4>
+				<p>I use the following tools for designing and prototyping:</p>
+			</div>
+			<div class="skills__items d-flex flex-wrap text-center">
+				{{ range .Site.Params.skills.design }}
+					<div class="col-6 col-sm-4 col-lg-3 pb-4">
+						<img
+							src="{{.icon}}"
+							class="w-25 mb-2 pb-1"
+							aria-label="{{ .name }}"
+							alt="{{ .name }}"
+						/>
+						<span class="d-block mb-0">{{ .name }}</span>
+					</div>
+				{{ end }}
+				<p id="front-end"></p>
+			</div>
+		</div>
+
+		<div class="shadow rounded mt-5 p-4">
+			<div class="skills__header text-left">
+				<h4>Front End</h4>
+				<p>Here's some of the front end technologies that I work with:</p>
+			</div>
+			<div class="skills__items d-flex flex-wrap text-center">
+				{{ range .Site.Params.skills.front }}
+					<div class="col-6 col-sm-4 col-lg-3 pb-4">
+						<img
+							src="{{.icon}}"
+							class="w-25 mb-2 pb-1"
+							aria-label="{{ .name }}"
+							alt="{{ .name }}"
+						/>
+						<span class="d-block mb-0">{{ .name }}</span>
+					</div>
+				{{ end }}
+				<p id="back-end"></p>
+			</div>
+		</div>
+
+		<div class="shadow rounded mt-5 p-4">
+			<div class="skills__header text-left">
+				<h4>Back End</h4>
+				<p>Skilled in the following languages and frameworks:</p>
+			</div>
+			<div class="skills__items d-flex flex-wrap text-center">
+				{{ range .Site.Params.skills.back }}
+					<div class="col-6 col-sm-4 col-lg-3 pb-4">
+						<img
+							src="{{.icon}}"
+							class="w-25 mb-2 pb-1"
+							aria-label="{{ .name }}"
+							alt="{{ .name }}"
+						/>
+						<span class="d-block mb-0">{{ .name }}</span>
+					</div>
+				{{ end }}
+			</div>
+		</div>
+
+		<div class="shadow rounded mt-5 p-4">
+			<div class="skills__header text-left">
+				<h4>Tools</h4>
+				<p>Other tools that I use to develop, test and deploy projects:</p>
+			</div>
+			<div class="skills__items d-flex flex-wrap text-center">
+				{{ range .Site.Params.skills.tools }}
+					<div class="col-6 col-sm-4 col-lg-3 pb-4">
+						<img
+							src="{{.icon}}"
+							class="w-25 mb-2 pb-1"
+							aria-label="{{ .name }}"
+							alt="{{ .name }}"
+						/>
+						<span class="d-block mb-0">{{ .name }}</span>
+					</div>
+				{{ end }}
+			</div>
+		</div>
+  	</div>
+</section>
+{{ end }}
+<!-- /skills -->

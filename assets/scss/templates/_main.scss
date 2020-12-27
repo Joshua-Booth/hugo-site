@@ -1,41 +1,110 @@
 /* body */
 
+.main {
+  flex: 1 0 auto;
+}
+
 /* banner */
 .banner {
   padding: 220px 0 120px;
   position: relative;
+
   @include desktop-lg {
     padding: 150px 0 100px;
   }
+
   @include desktop {
     padding: 100px 0 0;
+  }
+
+  &-text-container {
+    text-align: left;
+
+    .banner-title,
+    .banner-subtitle,
+    .social-icon {
+      padding-left: 1rem;
+    }
+
+    @include desktop {
+      text-align: center;
+
+      .banner-title, .banner-subtitle, .social-icon {
+        padding-left: 0;
+      }
+    }
   }
 
   .illustration {
     position: absolute;
     bottom: 0;
     right: 30px;
+
     @include desktop-xl {
       max-width: 600px;
     }
+
     @include desktop {
       display: none;
     }
   }
-  .illustration-mobile{
+
+  .illustration-mobile {
     display: none;
+
+    & img {
+      max-height: 300px;
+    }
+
     @include desktop {
       display: block;
     }
   }
 }
 
+.card {
+  transition: transform .5s;
+
+  &-deck {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .card {
+      @include tablet {
+        flex: auto;
+      }
+    }
+  }
+
+  &-img-top {
+    height: 280px;
+
+    @include desktop {
+      height: 200px;
+    }
+
+    @include tablet {
+      height: 150px;
+    }
+
+    @include mobile {
+      height: 280px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 10px 30px 0 rgba(68,74,102,.1) !important;
+    transform: scale(1.05);
+  }
+}
+
+
 /* blog */
 .block {
   padding: 60px 60px 40px;
 }
 
-.author-thumb{
+.author-thumb {
   width: 300px;
   object-fit: cover;
 }
@@ -69,13 +138,16 @@
     }
   }
 }
-.post-title:hover{
+
+.post-title:hover {
   text-decoration: underline;
 }
+
 .post-meta{
   color: #999;
-  a{
+  a {
     color: inherit;
+
     &:hover{
       color: $primary-color;
     }
@@ -195,8 +267,8 @@
 }
 
 /* social icon */
-.social-icon{
-  a{
+.social-icon {
+  a {
     height: 45px;
     width: 45px;
     border: 1px solid $black;
@@ -205,7 +277,8 @@
     text-align: center;
     display: block;
     color: $black;
-    &:hover{
+
+    &:hover {
       background: $primary-color;
       color: $white;
       text-decoration: none;
@@ -214,15 +287,20 @@
 }
 
 /* nav tab */
-.nav-tab{
-  .nav-link{
+.nav-tab {
+  .nav-link {
     padding: 15px;
     color: $text-color;
     border-radius: 5px;
-    &.active{
+
+    &.active {
       @extend .shadow;
       color: $white;
       background: $primary-color;
     }
   }
+}
+
+footer {
+  flex-shrink: 0;
 }

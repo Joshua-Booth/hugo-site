@@ -1,85 +1,159 @@
 {{ define "main" }}
 
-<!-- banner -->
-<section
-  class="banner bg-cover"
-  style="background-image: url('{{ .Site.Params.banner.bgImage | relURL }}');"
->
-  <img
-    src="{{ .Site.Params.banner.image | relURL }}"
-    class="img-fluid illustration w-75 h-75"
-    alt=""
-  />
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 mb-5 mb-lg-0 text-center">
-        <h1>{{ .Site.Params.banner.title | markdownify }}</h1>
-        <h4>{{ .Site.Params.banner.subTitle | markdownify }}</h4>
+<div class="main">
+  <!-- banner -->
+  <section
+    class="banner bg-cover"
+    style="background-image: url('{{ .Site.Params.banner.bgImage | relURL }}');"
+  >
+    <img
+      src="{{ .Site.Params.banner.image | relURL }}"
+      class="img-fluid illustration w-75 h-75"
+      alt="{{ .Site.Params.banner.title }}"
+    />
+    <div class="container">
+      <div class="row">
+        <div class="banner-text-container col-lg-6 mb-5 mb-lg-0 mt-5 mt-lg-0">
+          <h1 class="banner-title">
+            {{ .Site.Params.banner.title | markdownify }}
+          </h1>
+          <h4 class="banner-subtitle">
+            {{ .Site.Params.banner.subTitle | markdownify }}
+          </h4>
 
-        <ul class="list-inline social-icon mb-0 pt-3">
-          {{ range .Site.Params.social }}
-          <li class="list-inline-item">
-            <a
-              href="{{ .link | safeURL }}"
-              aria-label="{{ .name }}"
-              alt="{{ .name }}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="{{ .icon }}"></i>
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-      <div
-        class="col-lg-6 illustration-mobile text-center mx-auto w-75 mw-75 pb-5"
-      >
-        <img
-          src="{{ .Site.Params.banner.image | relURL }}"
-          class="img-fluid"
-          alt="{{ .Site.Params.banner.title }}"
-        />
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /banner -->
-
-<!-- cta -->
-{{ if .Site.Params.cta.enable }}
-<section class="section pt-3 mt-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto pt-3">
-        <div class="row shadow bg-white p-5">
-          <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
+          <div class="illustration-mobile col-lg-6 text-center mx-auto w-75 mw-75 py-5">
             <img
-              src="{{ .Site.Params.cta.image | relURL }}"
-              class="mr-4"
-              alt="{{ .Site.Params.cta.title }}"
+              src="{{ .Site.Params.banner.image | relURL }}"
+              class="img-fluid"
+              alt="{{ .Site.Params.banner.title }}"
             />
           </div>
-          <div class="col-md-8 text-center text-md-left">
-            <h3 class="mt-0">{{ .Site.Params.cta.title | markdownify }}</h3>
-            <p>{{ .Site.Params.cta.description | markdownify }}</p>
-            {{ if .Site.Params.cta.button.enable }}
+
+          <ul class="list-inline social-icon mb-0 pt-3">
+            {{ range .Site.Params.social }}
+            <li class="list-inline-item">
               <a
-                href="{{ .Site.Params.cta.button.link | absURL }}"
-                class="btn btn-primary"
+                href="{{ .link | safeURL }}"
+                aria-label="{{ .name }}"
+                alt="{{ .name }}"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {{ .Site.Params.cta.button.label }}
+                <i class="{{ .icon }}"></i>
               </a>
+            </li>
             {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /banner -->
+
+  <!-- Page Content -->
+  <div class="text-center mx-auto pt-3 mt-4 px-3">
+    {{ .Content }}
+
+    <div class="text-center mx-auto pt-3 mt-4 px-3">
+      <div class="card-deck mt-4">
+        <div class="card border-0 shadow mb-5 pb-4">
+          <img
+            class="card-img-top p-4"
+            src="{{ `images/designer.svg` | relURL }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Design</h5>
+            <p class="card-text">
+              I create user interfaces and experiences for the web and mobile
+              applications.
+            </p>
+          </div>
+          <div class="card-footer bg-white border-0">
+            <a href="/about#design" class="btn btn-outline-primary">
+              Learn more
+            </a>
+          </div>
+        </div>
+
+        <div class="card border-0 shadow mb-5 pb-4">
+          <img
+            class="card-img-top p-4"
+            src="{{ `images/ui_design.svg` | relURL }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Front End</h5>
+            <p class="card-text">
+              I develop web designs into fast, responsive websites and web apps.
+            </p>
+          </div>
+          <div class="card-footer bg-white border-0">
+            <a href="/about#front-end" class="btn btn-outline-primary">
+              Learn more
+            </a>
+          </div>
+        </div>
+
+        <div class="card border-0 shadow mb-5 pb-4">
+          <img
+            class="card-img-top p-4"
+            src="{{ `images/backend.svg` | relURL }}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Back End</h5>
+            <p class="card-text">
+              I build backend systems that easily integrate into front end
+              projects.
+            </p>
+          </div>
+          <div class="card-footer bg-white border-0">
+            <a href="/about#back-end" class="btn btn-outline-primary">
+              Learn more
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-{{ end }}
-<!-- /cta -->
+  <!-- /Page Content -->
 
-{{ partial "personData.html" }}
+  <!-- cta -->
+  {{ if .Site.Params.cta.enable }}
+  <section class="section pt-3 mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto pt-3">
+          <div class="row shadow bg-white p-5">
+            <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
+              <img
+                src="{{ .Site.Params.cta.image | relURL }}"
+                class="mr-4"
+                alt="{{ .Site.Params.cta.title }}"
+              />
+            </div>
+            <div class="col-md-8 text-center text-md-left">
+              <h3 class="mt-0">{{ .Site.Params.cta.title | markdownify }}</h3>
+              <p>{{ .Site.Params.cta.description | markdownify }}</p>
+              {{ if .Site.Params.cta.button.enable }}
+                <a
+                  href="{{ .Site.Params.cta.button.link | absURL }}"
+                  class="btn btn-primary"
+                >
+                  {{ .Site.Params.cta.button.label }}
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  <!-- /cta -->
+
+  {{ partial "personData.html" }}
+</div>
 
 {{ end }}

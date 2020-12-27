@@ -1,77 +1,67 @@
 {{ define "main" }}
 
-<section class="section pb-0 pt-0">
+<section class="main section">
   <div class="container">
+    <h1 class="h2 text-black text-center text-sm-left pb-5 pt-0">
+      {{ .Title | markdownify }}
+    </h1>
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center py-5 px-sm-3 px-md-5 shadow">
-        <img
-          src="{{ .Params.Image | relURL }}"
-          alt="{{ .Params.author }}"
-          class="img-fluid d-block mx-auto rounded mb-4 author-thumb"
-        />
-        <h1 class="h2 text-black pb-3">{{ .Title | markdownify }}</h1>
-        <div class="content">{{ .Content }}</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- cta -->
-{{ if .Site.Params.about.cta.enable }}
-<section class="section pt-3 mt-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto pt-3">
-        <div class="row shadow bg-white p-5">
-          <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
+      <div class="card border-0 shadow rounded mx-auto mb-5 p-3">
+        <div class="row no-gutters">
+          <div class="col-md-4 text-center">
             <img
-              src="{{ .Site.Params.about.cta.image | relURL }}"
-              class="mr-4"
-              alt="..."
+              src="{{ .Params.Image | relURL }}"
+              alt="{{ .Params.author }}"
+              class="img-fluid mx-auto mb-2 author-thumb"
             />
           </div>
-          <div class="col-md-8 text-center text-md-left">
-            <h3 class="mt-0">
-              {{ .Site.Params.about.cta.title | markdownify }}
-            </h3>
-            
-            <p>{{ .Site.Params.about.cta.description | markdownify }}</p>
-            
-            {{ if .Site.Params.about.cta.button.enable }}
-            <a
-              href="{{ .Site.Params.about.cta.button.link | absURL }}"
-              class="btn btn-primary"
-            >
-              {{ .Site.Params.about.cta.button.label }}
-            </a>
-            {{ end }}
+          <div class="col-md-8 position-relative" style="min-height: 250px;">
+            <div class="card-body text-center text-md-left">
+              <h4 class="card-title">{{ .Site.Params.Author }}</h4>
+              {{ .Content }}
+              <div class="position-absolute w-100 text-center center bottom">
+                {{- partial "socialMedia.html" . -}}
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      {{- partial "skills.html" . -}}
     </div>
   </div>
-</section>
-{{ end }}
-<!-- /cta -->
 
-{{ if .Site.Params.blog.enable }}
-<!-- blog -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto px-0">
-        <h2 class="mb-4">Posts by {{ .Params.author }}</h2>
-        <div class="bg-white shadow block">
-          {{ $name:= .Title }}
-          {{ range where .Site.RegularPages "Params.author" $name }}
-            {{ .Render "article" }}
+  <!-- cta -->
+  {{ if .Site.Params.about.cta.enable }}
+    <div class="col-lg-8 mx-auto mt-5 pt-5">
+      <div class="row shadow bg-white p-5">
+        <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
+          <img
+            src="{{ .Site.Params.about.cta.image | relURL }}"
+            class="mr-4"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8 text-center text-md-left">
+          <h3 class="mt-0">
+            {{ .Site.Params.about.cta.title | markdownify }}
+          </h3>
+          
+          <p>{{ .Site.Params.about.cta.description | markdownify }}</p>
+          
+          {{ if .Site.Params.about.cta.button.enable }}
+          <a
+            href="{{ .Site.Params.about.cta.button.link | absURL }}"
+            class="btn btn-primary"
+          >
+            {{ .Site.Params.about.cta.button.label }}
+          </a>
           {{ end }}
         </div>
       </div>
     </div>
-  </div>
+  {{ end }}
+  <!-- /cta -->
 </section>
-<!-- /blog -->
-{{ end }}
 
 {{ end }}
