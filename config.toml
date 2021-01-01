@@ -7,6 +7,8 @@ title = "Joshua Booth - Full-Stack Software Developer"
 paginate = "5"
 # post excerpt
 summaryLength = "10"
+# disqus short name
+disqusShortname = "joshuaboothnz"
 
 [markup.goldmark.renderer]
 unsafe= true
@@ -49,9 +51,14 @@ name = "Work"
 weight = 2
 
 [[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
+
+[[menu.main]]
 URL = "contact"
 name = "Contact"
-weight = 3
+weight = 4
 
 # footer menu
 [[menu.footer]]
@@ -65,9 +72,14 @@ name = "Work"
 weight = 2
 
 [[menu.footer]]
+URL = "blog"
+name = "Blog"
+weight = 3
+
+[[menu.footer]]
 URL = "contact"
 name = "Contact"
-weight = 3
+weight = 4
 
 
 ######################### Default Parameters #########################
@@ -97,7 +109,7 @@ enable = false
 
 # blog
 [params.blog]
-enable = false
+enable = true
 
 
 ######################## Banner ######################################

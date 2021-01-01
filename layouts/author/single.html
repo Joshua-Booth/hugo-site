@@ -1,39 +1,47 @@
 {{ define "main" }}
 
-<section class="section pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center block shadow">
-        <img
-          src="{{ .Params.Image | relURL }}"
-          alt=""
-          class="img-fluid d-block mx-auto rounded-circle mb-4 author-thumb"
-        />
-        <h4>{{ .Title | markdownify }}</h4>
-        <div class="content">{{ .Content }}</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{ if .Site.Params.blog.enable }}
-<!-- blog -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto px-0">
-        <h2 class="mb-4">Posts by author</h2>
-        <div class="bg-white shadow block">
-          {{ $name:= .Title }}
-          {{ range where .Site.RegularPages "Params.author" $name }}
-            {{ .Render "article" }}
-          {{ end }}
+<div class="main">
+  <section class="section pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 px-4 px-auto-sm mx-auto text-center block shadow">
+          <div class="row">
+            <img
+              src="{{ .Params.Image | relURL }}"
+              alt="Photo of {{ .Title }}"
+              class="col-6 mx-auto col-sm-6 col-md-5 img-fluid d-inline-block rounded mb-4 author-thumb"
+            />
+            <div class="col-12 col-sm-6 col-md-7 mt-4 text-left">
+              <h4 class="px-4">{{ .Title | markdownify }}</h4>
+              <div class="content pt-4">
+                {{ .Content }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- /blog -->
-{{ end }}
+  </section>
+  
+  {{ if .Site.Params.blog.enable }}
+  <!-- blog -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto px-0">
+          <h2 class="ml-5 ml-sm-0 pl-2 pl-sm-0 mb-4">Posts by author</h2>
+          <div class="bg-white shadow block">
+            {{ $name:= .Title }}
+            {{ range where .Site.RegularPages "Params.author" $name }}
+              {{ .Render "article" }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /blog -->
+  {{ end }}
+</div>
 
 {{ end }}
