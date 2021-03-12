@@ -1,8 +1,10 @@
-+++
-title = "Joshua Booth"
-image = "/images/author/joshua-booth.jpg"
-description = "Full-stack developer and designer"
-+++
+---
+title: "Joshua Booth"
+image: "/images/author/joshua-booth.jpg"
+images:
+- "/images/author/joshua-booth.jpg"
+description: "Full-stack developer and designer"
+---
 
 {{< aboutIntro >}}
 Hey! I'm Josh a full stack developer and designer based in Auckland.

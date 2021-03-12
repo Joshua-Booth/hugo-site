@@ -5,6 +5,8 @@ link: https://bobandtricia.nz/
 repo: https://github.com/Joshua-Booth/audio-devotions
 description: "Built with basic HTML, CSS and uses JavaScript to provide full functionality to the site."
 image: "/images/work/bobandtricia.nz.png"
+images:
+- "/images/work/bobandtricia.nz.png"
 role: "Designer and Developer"
 ---
 

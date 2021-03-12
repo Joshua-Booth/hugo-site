@@ -18,6 +18,8 @@
 
   {{ hugo.Generator }}
 
+  {{ template "_internal/opengraph.html" . }}
+
   {{ "<!-- Plugins -->" | safeHTML }}
   {{ range .Site.Params.plugins.css }}
     <link rel="stylesheet" href="{{ .URL | absURL }} ">
