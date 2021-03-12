@@ -1,6 +1,7 @@
 ---
 title: "Audio Bible Devotions"
 subtitle: "Media Player Application"
+author: "Joshua Booth"
 link: https://bobandtricia.nz/
 repo: https://github.com/Joshua-Booth/audio-devotions
 description: "Built with basic HTML, CSS and uses JavaScript to provide full functionality to the site."

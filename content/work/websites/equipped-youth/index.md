@@ -1,6 +1,7 @@
 ---
 title: "Realive Equipped Youth Manual"
 subtitle: "Informational PWA"
+author: "Joshua Booth"
 link: https://realiveyouth.netlify.com/
 repo: private
 description: "Progressive web application built with the static site generator Hugo, it's styled with UIkit and CSS and automatically deploys from GitHub."

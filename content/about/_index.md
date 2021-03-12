@@ -1,6 +1,7 @@
 ---
 title: "About Me"
 date: 2020-01-02T17:05:00+13:00
+author: "Joshua Booth"
 draft: false
 image: "/images/author/joshua-booth.jpg"
 images:

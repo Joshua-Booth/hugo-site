@@ -1,6 +1,7 @@
 ---
 title: "Sophie Booth"
 subtitle: "Personal Portfolio"
+author: "Joshua Booth"
 link: https://sophiebooth.nz/old
 repo: https://github.com/Joshua-Booth/sophie
 description: "This website is built with HTML, CSS, JavaScript and a little bit of PHP."

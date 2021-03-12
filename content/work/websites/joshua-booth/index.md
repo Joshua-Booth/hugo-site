@@ -1,6 +1,7 @@
 ---
 title: "Joshua Booth"
 subtitle: "Personal Portfolio"
+author: "Joshua Booth"
 link: https://joshuabooth.nz/
 repo: https://github.com/Joshua-Booth/website
 description: "This website is built with the static site generator Hugo, it's styled with Bootstrap and SASS and automatically deploys from GitHub."
