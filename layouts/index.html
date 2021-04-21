@@ -47,74 +47,61 @@
   </section>
   <!-- /banner -->
 
-  <!-- Page Content -->
-  <div class="text-center mx-auto pt-3 mt-4 px-3">
-    {{ .Content }}
+  <!-- Skills -->
+  <section class="text-center mx-auto pt-3 mt-4 px-3">
+    <h2 class="mt-5">Hey <span class="wave">👋🏻</span> I'm Josh!</h2>
 
-    <div class="text-center mx-auto pt-3 mt-4 px-3">
+    <h3 class="h4 mt-5">Here's what I'm skilled in</h3>
+
+    <div class="text-center mx-auto pt-0 px-3">
       <div class="card-deck mt-4">
-        <div class="card border-0 shadow mb-5 pb-4">
+        <div class="card border-0 mb-5 py-4">
           <img
             class="card-img-top p-4"
             src="{{ `images/designer.svg` | relURL }}"
-            alt="Card image cap"
+            alt="Web and App Design"
           />
           <div class="card-body">
-            <h3 class="h5 card-title">Design</h3>
-            <p class="card-text">
+            <h4 class="h5 card-title font-weight-bold">Design</h4>
+            <p class="card-text col-12 col-sm-8 col-md-12 mx-auto px-0">
               I create user interfaces and experiences for the web and mobile
               applications.
             </p>
           </div>
-          <div class="card-footer bg-white border-0">
-            <a href="/about#design" class="btn btn-outline-primary">
-              Learn more
-            </a>
-          </div>
         </div>
 
-        <div class="card border-0 shadow mb-5 pb-4">
+        <div class="card border-0 mb-5 py-4">
           <img
             class="card-img-top p-4"
             src="{{ `images/ui_design.svg` | relURL }}"
-            alt="Card image cap"
+            alt="Front End Development"
           />
           <div class="card-body">
-            <h3 class="h5 card-title">Front End</h3>
-            <p class="card-text">
+            <h4 class="h5 card-title font-weight-bold">Front End</h4>
+            <p class="card-text col-12 col-sm-8 col-md-12 mx-auto px-0">
               I develop web designs into fast, responsive websites and web apps.
             </p>
           </div>
-          <div class="card-footer bg-white border-0">
-            <a href="/about#front-end" class="btn btn-outline-primary">
-              Learn more
-            </a>
-          </div>
         </div>
 
-        <div class="card border-0 shadow mb-5 pb-4">
+        <div class="card border-0 mb-5 py-4">
           <img
             class="card-img-top p-4"
             src="{{ `images/backend.svg` | relURL }}"
-            alt="Card image cap"
+            alt="Back End Development"
           />
           <div class="card-body">
-            <h3 class="h5 card-title">Back End</h3>
-            <p class="card-text">
+            <h4 class="h5 card-title font-weight-bold">Back End</h4>
+            <p class="card-text col-12 col-sm-8 col-md-12 mx-auto px-0">
               I build backend systems that easily integrate into front end
               projects.
             </p>
           </div>
-          <div class="card-footer bg-white border-0">
-            <a href="/about#back-end" class="btn btn-outline-primary">
-              Learn more
-            </a>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- /Page Content -->
+  </section>
+  <!-- /Skills -->
 
   <!-- cta -->
   {{ if .Site.Params.cta.enable }}
