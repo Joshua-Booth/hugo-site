@@ -99,7 +99,7 @@ googleAnalyticsID = "UA-155146153-1"
 # contact form action
 contactFormAction = "https://formspree.io/xyyknvro"
 # copyright
-copyright = "&copy; 2020 [Joshua Booth](https://joshuabooth.nz) All Rights Reserved"
+copyright = "&copy; 2021 [Joshua Booth](https://joshuabooth.nz) All Rights Reserved"
 
 # preloader
 [params.preloader]
