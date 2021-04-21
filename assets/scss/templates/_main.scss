@@ -1,11 +1,13 @@
 /* body */
 
+main,
 .main {
   flex: 1 0 auto;
 }
 
 /* banner */
 .banner {
+  background-color: $light;
   padding: 220px 0 120px;
   position: relative;
 
@@ -17,31 +19,60 @@
     padding: 100px 0 0;
   }
 
+  .row {
+    @media (min-width: 991px) and (max-width: 1200px) {
+      height: 220px;
+    }
+
+    @media (min-width: 1201px) {
+      height: 180px;
+    }
+  }
+
   &-text-container {
     text-align: left;
 
     .banner-title,
     .banner-subtitle,
     .social-icon {
-      padding-left: 1rem;
+      padding-left: 1.5rem;
     }
 
     @include desktop {
       text-align: center;
 
-      .banner-title, .banner-subtitle, .social-icon {
+      .banner-title,
+      .banner-subtitle,
+      .social-icon {
         padding-left: 0;
       }
     }
   }
 
+  &-cta {
+    @media (min-width: 991px) {
+      margin-top: 5rem !important;
+    }
+  }
+
   .illustration {
     position: absolute;
-    bottom: 0;
-    right: 30px;
+    bottom: -100px;
+    height: 150%;
+    right: -90px;
 
-    @include desktop-xl {
-      max-width: 600px;
+    @media (min-width: 992px) and (max-width: 1200px) {
+      bottom: -100px;
+      display: block;
+      height: 165%;
+      right: 40px;
+    }
+
+    @media (min-width: 1201px) {
+      bottom: -120px;
+      display: block;
+      height: 200%;
+      right: 40px;
     }
 
     @include desktop {
@@ -114,7 +145,6 @@
   justify-content: center;
 
   .page-item {
-
     .page-link {
       display: inline-block;
       width: 40px;
@@ -143,17 +173,16 @@
   text-decoration: underline;
 }
 
-.post-meta{
+.post-meta {
   color: #999;
   a {
     color: inherit;
 
-    &:hover{
+    &:hover {
       color: $primary-color;
     }
   }
 }
-
 
 .content {
   * {
@@ -205,9 +234,9 @@
 
     th,
     td {
-      padding: .75rem;
+      padding: 0.75rem;
       vertical-align: top;
-      border: 1px solid #dee2e6
+      border: 1px solid #dee2e6;
     }
 
     thead {
@@ -223,7 +252,6 @@
     }
   }
 
-
   blockquote {
     padding: 20px;
     background: $light;
@@ -235,7 +263,6 @@
       font-style: italic !important;
     }
   }
-
 
   pre {
     padding: 10px 20px;
@@ -263,7 +290,6 @@
     border-radius: 3px;
     color: $text-color-dark;
   }
-
 }
 
 /* social icon */
@@ -271,8 +297,8 @@
   a {
     height: 45px;
     width: 45px;
-    border: 1px solid $black;
     border-radius: 50%;
+    font-size: 18px;
     line-height: 45px;
     text-align: center;
     display: block;
