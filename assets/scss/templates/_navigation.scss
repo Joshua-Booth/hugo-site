@@ -1,6 +1,6 @@
 .navigation {
-  transition: .3s ease;
-  &.fixed-top{
+  transition: 0.3s ease;
+  &.fixed-top {
     @include desktop {
       position: fixed !important;
     }
@@ -15,10 +15,10 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.161);
 }
 
-.nav-item{
+.nav-item {
   margin: 0;
 
-  .nav-link{
+  .nav-link {
     text-transform: capitalize;
   }
 }
@@ -27,13 +27,13 @@
   @include desktop {
     background: $primary-color !important;
     color: $white !important;
-    border-radius: .25rem !important;
+    border-radius: 0.25rem !important;
   }
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: $text-color-dark;
-  &:hover{
+  &:hover {
     color: $primary-color;
   }
 }
@@ -41,7 +41,6 @@
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 20px;
 }
-
 
 /* search */
 .search-btn {
@@ -57,7 +56,7 @@
   height: 100%;
   z-index: 2;
   visibility: hidden;
-  transition: .2s ease;
+  transition: 0.2s ease;
   opacity: 0;
 
   &.open {
