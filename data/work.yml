@@ -1,121 +1,118 @@
 projects:
-# project category
-- title: Websites
-  project:
-  # Personal Site
-  - name: Joshua Booth
-    image: "/images/work/joshuabooth.nz.png"
-    link: https://joshuabooth.nz/
-    caseStudy: /work/websites/joshua-booth
-    repo: https://github.com/Joshua-Booth/website
-  # Realive Equipped Youth Manual
-  - name: Realive Equipped Youth Manual
-    image: "/images/work/realiveyouth.jpg"
-    link: https://realiveyouth.netlify.com/
-    caseStudy: /work/websites/equipped-youth
-    repo: private
-  # Sophie Booth
-  - name: Sophie Booth
-    image: "/images/work/sophiebooth.nz.png"
-    caseStudy: /work/websites/sophie-booth
-    repo: https://github.com/Joshua-Booth/sophie
-  # Audio Bible Devotions
-  - name: Audio Bible Devotions
-    image: "/images/work/bobandtricia.nz.png"
-    link: https://bobandtricia.nz/
-    caseStudy: /work/websites/audio-devotions
-    repo: https://github.com/Joshua-Booth/audio-devotions
+  # project category
+  - title: Websites
+    project:
+      # Personal Site
+      - name: Joshua Booth
+        image: "/images/work/joshuabooth.nz.png"
+        link: https://joshuabooth.nz/
+        caseStudy: /work/websites/joshua-booth
+        repo: https://github.com/Joshua-Booth/website
+      # Realive Equipped Youth Manual
+      - name: Realive Equipped Youth Manual
+        image: "/images/work/realiveyouth.jpg"
+        link: https://realiveyouth.netlify.com/
+        caseStudy: /work/websites/equipped-youth
+        repo: private
+      # Sophie Booth
+      - name: Sophie Booth
+        image: "/images/work/sophiebooth.nz.png"
+        caseStudy: /work/websites/sophie-booth
+        repo: https://github.com/Joshua-Booth/sophie
+      # Audio Bible Devotions
+      - name: Audio Bible Devotions
+        image: "/images/work/bobandtricia.nz.png"
+        link: https://bobandtricia.nz/
+        caseStudy: /work/websites/audio-devotions
+        repo: https://github.com/Joshua-Booth/audio-devotions
 
+  # project category
+  - title: Software
+    project:
+      # Price Finder Script
+      - name: Price Finder
+        image: "/images/work/price_finder.svg"
+        repo: "https://github.com/Joshua-Booth/price-finder"
+      # Just Drive Game
+      - name: Just Drive
+        image: "/images/work/car.svg"
+        repo: "https://github.com/Joshua-Booth/just-drive"
+      # Encryption and Decryption Tool Script
+      - name: Cryptography Tool
+        image: "/images/work/data_process.svg"
+        repo: "https://github.com/Joshua-Booth/text-cryptography"
+      # Just Drive Game
+      - name: Extreme Pong
+        image: "/images/work/gaming.svg"
+        repo: "https://github.com/Joshua-Booth/extreme-pong"
+      # Docx Commaind-line Diary Script
+      - name: Command-line Diary
+        image: "/images/work/book_lover.svg"
+        repo: "https://github.com/Joshua-Booth/docx-diary"
 
-# project category
-- title: Software
-  project:
-  # Price Finder Script
-  - name: Price Finder
-    image: "/images/work/price_finder.svg"
-    repo: "https://github.com/Joshua-Booth/price-finder"
-  # Just Drive Game
-  - name: Just Drive
-    image: "/images/work/car.svg"
-    repo: "https://github.com/Joshua-Booth/just-drive"
-  # Encryption and Decryption Tool Script
-  - name: Cryptography Tool
-    image: "/images/work/data_process.svg"
-    repo: "https://github.com/Joshua-Booth/text-cryptography"
-  # Just Drive Game
-  - name: Extreme Pong
-    image: "/images/work/gaming.svg"
-    repo: "https://github.com/Joshua-Booth/extreme-pong"
-  # Docx Commaind-line Diary Script
-  - name: Command-line Diary 
-    image: "/images/work/book_lover.svg"
-    repo: "https://github.com/Joshua-Booth/docx-diary"
+  # project category
+  - title: Designs
+    project:
+      - name: "Countdown Timer"
+        code: "CEyHmHPBH2H"
+        image: "/images/work/designs/countdown-timer.jpg"
 
+      - name: "Music Player"
+        code: "CEgSAhTBPIJ"
+        image: "/images/work/designs/music-player.jpg"
 
-# project category
-- title: Designs
-  project:
+      - name: "Coffee Shop"
+        code: "CBXDAWIpShw"
+        image: "/images/work/designs/coffee-shop.jpg"
 
-  - name: "Countdown Timer"
-    code: "CEyHmHPBH2H"
-    image: "/images/work/designs/countdown-timer.jpg"
+      - name: "Checkout Page"
+        code: "B_Y6anlpBIL"
+        image: "/images/work/designs/checkout-page.jpg"
 
-  - name: "Music Player"
-    code: "CEgSAhTBPIJ"
-    image: "/images/work/designs/music-player.jpg"
+      - name: "Social Media Application"
+        code: "B_G27mwprze"
+        image: "/images/work/designs/social-media-app.jpg"
 
-  - name: "Coffee Shop"
-    code: "CBXDAWIpShw"
-    image: "/images/work/designs/coffee-shop.jpg"
+      - name: Tax Calculator Application
+        code: "B-Gp7qGpIEY"
+        image: "/images/work/designs/tax-calculator.jpg"
 
-  - name: "Checkout Page"
-    code: "B_Y6anlpBIL"
-    image: "/images/work/designs/checkout-page.jpg"
+      - name: Chat Application
+        code: "B-EEOClJNGW"
+        image: "images/work/designs/chat-app-1.jpg"
+      - name: Chat Application
+        code: "B-EEGGlpBZn"
+        image: "images/work/designs/chat-app-2.jpg"
+      - name: Chat Application
+        code: "B8ktSdsJQM5"
+        image: "images/work/designs/chat-app-3.jpg"
 
-  - name: "Social Media Application"
-    code: "B_G27mwprze"
-    image: "/images/work/designs/social-media-app.jpg"
+      - name: "Joshua Booth's Site"
+        code: "B8R64h-pbJN"
+        image: "images/work/designs/josh-site-1.jpg"
+      - name: "Joshua Booth's Site"
+        code: "B8R6y98pJzo"
+        image: "images/work/designs/josh-site-2.jpg"
+      - name: "Joshua Booth's Site"
+        code: "B8R6uTtJqb7"
+        image: "images/work/designs/josh-site-3.jpg"
 
-  - name: Tax Calculator Application
-    code: "B-Gp7qGpIEY"
-    image: "/images/work/designs/tax-calculator.jpg"
+      - name: Realive Equipped Youth Manual
+        code: "B6HoM8Xpv8F"
+        image: "images/work/designs/ryem-1.jpg"
+      - name: Realive Equipped Youth Manual
+        code: "B6HoDz3pfJT"
+        image: "images/work/designs/ryem-2.jpg"
+      - name: Realive Equipped Youth Manual
+        code: "B6Hn4cxpbjG"
+        image: "images/work/designs/ryem-3.jpg"
 
-  - name: Chat Application
-    code: "B-EEOClJNGW"
-    image: "images/work/designs/chat-app-1.jpg"
-  - name: Chat Application
-    code: "B-EEGGlpBZn"
-    image: "images/work/designs/chat-app-2.jpg"
-  - name: Chat Application
-    code: "B8ktSdsJQM5"
-    image: "images/work/designs/chat-app-3.jpg"
-
-  - name: "Joshua Booth's Site"
-    code: "B8R64h-pbJN"
-    image: "images/work/designs/josh-site-1.jpg"
-  - name: "Joshua Booth's Site"
-    code: "B8R6y98pJzo"
-    image: "images/work/designs/josh-site-2.jpg"
-  - name: "Joshua Booth's Site"
-    code: "B8R6uTtJqb7"
-    image: "images/work/designs/josh-site-3.jpg"
-
-  - name: Realive Equipped Youth Manual
-    code: "B6HoM8Xpv8F"
-    image: "images/work/designs/ryem-1.jpg"
-  - name: Realive Equipped Youth Manual
-    code: "B6HoDz3pfJT"
-    image: "images/work/designs/ryem-2.jpg"
-  - name: Realive Equipped Youth Manual
-    code: "B6Hn4cxpbjG"
-    image: "images/work/designs/ryem-3.jpg"
-  
-  - name: Ecommerce Site
-    code: "B15Uli8JM31"
-    image: "images/work/designs/ecommerce-site-1.jpg"
-  - name: Ecommerce Site
-    code: "B15UgdeJefo"
-    image: "images/work/designs/ecommerce-site-2.jpg"
-  - name: Ecommerce Site
-    code: "B15UcfeJ_fL"
-    image: "images/work/designs/ecommerce-site-3.jpg"
+      - name: Ecommerce Site
+        code: "B15Uli8JM31"
+        image: "images/work/designs/ecommerce-site-1.jpg"
+      - name: Ecommerce Site
+        code: "B15UgdeJefo"
+        image: "images/work/designs/ecommerce-site-2.jpg"
+      - name: Ecommerce Site
+        code: "B15UcfeJ_fL"
+        image: "images/work/designs/ecommerce-site-3.jpg"
