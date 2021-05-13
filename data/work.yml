@@ -53,6 +53,18 @@ projects:
   # project category
   - title: Designs
     project:
+      - name: "Recipe Book"
+        code: "CM5-fu8hNQe"
+        image: "/images/work/designs/recipe-book.jpg"
+
+      - name: "Notes App"
+        code: "CMDTlANhtqS"
+        image: "/images/work/designs/notes-app.jpg"
+
+      - name: "Workout Tracker"
+        code: "CL3jmwohDlx"
+        image: "/images/work/designs/workout-tracker.jpg"
+
       - name: "Countdown Timer"
         code: "CEyHmHPBH2H"
         image: "/images/work/designs/countdown-timer.jpg"
