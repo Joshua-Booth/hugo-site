@@ -67,3 +67,13 @@
     background: transparent;
   }
 }
+
+.badge {
+  &-md {
+    font-size: 60%;
+  }
+
+  &-sm {
+    font-size: 40%;
+  }
+}

@@ -134,6 +134,21 @@ enable = true
 label = "Contact me"
 link = "contact"
 
+######################### Portfolio Highlights ########################
+[[params.portfolio_highlight]]
+name = "The PCOS Protocol"
+description = "An e-learning web app for helping women with PCOS through information from daily lessons, recipes and more resouces."
+tag = "2020"
+website = "https://thepcosprotocol.co"
+# project = "work/websites/pcos-protocol/"
+image = "images/work/websites/thepcosprotocol.png"
+[[params.portfolio_highlight]]
+name = "Equipped Youth Manual"
+description = "A resource platform for Realive Youth members to encourage, deepen, explain, and share their faith with others."
+tag = "2019"
+website = "https://realiveyouth.netlify.app/"
+project = "work/websites/equipped-youth/"
+image = "images/work/websites/realiveyouth.png"
 
 ############################## Social Contact ###########################
 [[params.social]]
