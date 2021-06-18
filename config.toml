@@ -53,10 +53,10 @@ URL = "work"
 name = "Work"
 weight = 2
 
-[[menu.main]]
-URL = "blog"
-name = "Blog"
-weight = 3
+# [[menu.main]]
+# URL = "blog"
+# name = "Blog"
+# weight = 3
 
 [[menu.main]]
 URL = "contact"
@@ -74,10 +74,10 @@ URL = "work"
 name = "Work"
 weight = 2
 
-[[menu.footer]]
-URL = "blog"
-name = "Blog"
-weight = 3
+# [[menu.footer]]
+# URL = "blog"
+# name = "Blog"
+# weight = 3
 
 [[menu.footer]]
 URL = "contact"
@@ -112,7 +112,7 @@ enable = false
 
 # blog
 [params.blog]
-enable = true
+enable = false
 
 
 ######################## Banner ######################################
