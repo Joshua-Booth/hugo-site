@@ -14,12 +14,4 @@
       $(".navigation").removeClass("nav-bg");
     }
   });
-
-  // Search Form Open
-  $("#searchOpen").on("click", function () {
-    $(".search-wrapper").addClass("open");
-  });
-  $("#searchClose").on("click", function () {
-    $(".search-wrapper").removeClass("open");
-  });
 })(jQuery);
