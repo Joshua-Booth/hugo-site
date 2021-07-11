@@ -9,7 +9,7 @@ projects:
         caseStudy: /work/websites/joshua-booth
         repo: https://github.com/Joshua-Booth/website
       # Realive Equipped Youth Manual
-      - name: Realive Equipped Youth Manual
+      - name: Equipped Youth Manual
         image: "/images/work/realiveyouth.jpg"
         link: https://realiveyouth.netlify.com/
         caseStudy: /work/websites/equipped-youth
