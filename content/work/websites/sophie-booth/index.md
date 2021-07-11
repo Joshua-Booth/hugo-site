@@ -2,7 +2,6 @@
 title: "Sophie Booth"
 subtitle: "Personal Portfolio"
 author: "Joshua Booth"
-link: https://sophiebooth.nz/old
 repo: https://github.com/Joshua-Booth/sophie
 description: "This website is built with HTML, CSS, JavaScript and a little bit of PHP."
 image: "/images/work/sophiebooth.nz.png"
@@ -11,7 +10,7 @@ images:
 role: "Designer and Developer"
 ---
 
-I started this project as a gift for my sister in May 2019 and spent the entire month designing and implementing my ideas. This site serves as Sophie Booth's online space for others to learn more about her and or contact her.
+I started designing and building this project as a gift for my sister in May 2019. This site served as Sophie Booth's online space for others to learn more about her and or contact her.
 
 The aim of the design was to show off a little about her personality through the choice of specific colours and animations. 
 
