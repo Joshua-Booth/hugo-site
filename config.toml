@@ -127,7 +127,7 @@ link = "contact"
 ######################### Portfolio Highlights ########################
 [[params.portfolio_highlight]]
 name = "The PCOS Protocol"
-description = "An e-learning web app for helping women with PCOS through information from daily lessons, recipes and more resouces."
+description = "An e-learning web app for helping women with PCOS through information from daily lessons, recipes and more resources."
 tag = "2020"
 website = "https://thepcosprotocol.co"
 # project = "work/websites/pcos-protocol/"
