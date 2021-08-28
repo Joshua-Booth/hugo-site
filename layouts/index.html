@@ -55,14 +55,14 @@
 
     <div class="text-center mx-auto pt-0 px-3">
       <div class="card-deck mt-4">
-        <div class="card border-0 mb-5 py-4">
+        <div class="card border-0 mx-5 mb-5 py-4">
           <img
             class="card-img-top p-4"
             src="{{ `images/designer.svg` | relURL }}"
             alt="Web and App Design"
           />
           <div class="card-body">
-            <h4 class="h5 card-title font-weight-bold">Design</h4>
+            <h4 class="h5 card-title font-weight-bold">UI/UX Design</h4>
             <p class="card-text col-12 col-sm-8 col-md-12 mx-auto px-0">
               I create user interfaces and experiences for the web and mobile
               applications.
@@ -70,31 +70,16 @@
           </div>
         </div>
 
-        <div class="card border-0 mb-5 py-4">
+        <div class="card border-0 mx-5 mb-5 py-4">
           <img
             class="card-img-top p-4"
             src="{{ `images/ui_design.svg` | relURL }}"
             alt="Front End Development"
           />
           <div class="card-body">
-            <h4 class="h5 card-title font-weight-bold">Front End</h4>
+            <h4 class="h5 card-title font-weight-bold">Frontend Development</h4>
             <p class="card-text col-12 col-sm-8 col-md-12 mx-auto px-0">
-              I develop web designs into fast, responsive websites and web apps.
-            </p>
-          </div>
-        </div>
-
-        <div class="card border-0 mb-5 py-4">
-          <img
-            class="card-img-top p-4"
-            src="{{ `images/backend.svg` | relURL }}"
-            alt="Back End Development"
-          />
-          <div class="card-body">
-            <h4 class="h5 card-title font-weight-bold">Back End</h4>
-            <p class="card-text col-12 col-sm-8 col-md-12 mx-auto px-0">
-              I build backend systems that easily integrate into front end
-              projects.
+              I develop web designs into fast, responsive websites and web applications.
             </p>
           </div>
         </div>
@@ -147,7 +132,9 @@
         >
           Visit site
         </a>
-        {{ end }} {{ if .project }}
+        {{ end }}
+        
+        {{ if .project }}
         <a
           href="{{ .project }}"
           class="btn btn-primary mt-4 ml-2 ml-lg-1"
