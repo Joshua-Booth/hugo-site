@@ -47,10 +47,10 @@ URL = "work"
 name = "Work"
 weight = 2
 
-# [[menu.main]]
-# URL = "blog"
-# name = "Blog"
-# weight = 3
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
 
 [[menu.main]]
 URL = "contact"
@@ -68,10 +68,10 @@ URL = "work"
 name = "Work"
 weight = 2
 
-# [[menu.footer]]
-# URL = "blog"
-# name = "Blog"
-# weight = 3
+[[menu.footer]]
+URL = "blog"
+name = "Blog"
+weight = 3
 
 [[menu.footer]]
 URL = "contact"
@@ -102,7 +102,7 @@ preloader = "images/icons/logo.svg" # needs to be png, jpg, svg or gif format
 
 # blog
 [params.blog]
-enable = false
+enable = true
 
 
 ######################## Banner ######################################
