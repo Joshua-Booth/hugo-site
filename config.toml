@@ -37,10 +37,10 @@ URL = "plugins/bootstrap/bootstrap.min.js"
 ########################### Navigation ###############################
 
 # main menu
-[[menu.main]]
-URL = "about"
-name = "About"
-weight = 1
+# [[menu.main]]
+# URL = "about"
+# name = "About"
+# weight = 1
 
 [[menu.main]]
 URL = "work"
@@ -58,10 +58,10 @@ name = "Contact"
 weight = 4
 
 # footer menu
-[[menu.footer]]
-URL = "about"
-name = "About"
-weight = 1
+# [[menu.footer]]
+# URL = "about"
+# name = "About"
+# weight = 1
 
 [[menu.footer]]
 URL = "work"
